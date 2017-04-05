@@ -1,8 +1,8 @@
 {
-  "name": "foundationpress",
-  "title": "FoundationPress",
-  "version": "2.9.0",
-  "description": "FoundationPress is a WordPress starter theme based on Foundation 6 by Zurb",
+ "name": "wpstarter",
+  "title": "WP-Starter",
+  "version": "1.0.0",
+  "description": "WP-Starter is a starter theme for Wordress built on FoundationPress by Ole Fredrik which is based on Zurb Foundation",
   "keywords": [
     "FoundationPress",
     "WordPress",
@@ -13,13 +13,13 @@
     "customizable",
     "responsive"
   ],
-  "homepage": "http://foundationpress.olefredrik.com/",
-  "bugs": "https://github.com/olefredrik/FoundationPress/issues",
+  "homepage": "http://indigotag.in/",
+  "bugs": "https://github.com/codenamesrk/WP-Starter/issues",
   "license": "MIT",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/olefredrik/FoundationPress.git"
+    "url": "https://github.com/codenamesrk/WP-Starter.git"
   },
   "devDependencies": {
     "autoprefixer": "^6.1.0",
