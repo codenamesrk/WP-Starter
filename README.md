@@ -1,4 +1,4 @@
-# WP Starter [![Build Status](https://travis-ci.org/codenamesrk/WP-Starter.svg?branch=master)](https://travis-ci.org/codenamesrk/WP-Starter)
+# WP Starter 
 
 A wordpress starter-theme forked from FoundationPress and modified to suit our internal needs.
 
