@@ -14,7 +14,7 @@ var cleanCSS    = require('gulp-clean-css');
 
 // Enter URL of your local server here
 // Example: 'http://localwebsite.dev'
-var URL = '';
+var URL = 'http://localhost/cauldron/matt';
 
 // Check for --production flag
 var isProduction = !!(argv.production);
@@ -48,7 +48,7 @@ var PATHS = {
     'assets/components/foundation-sites/js/foundation.equalizer.js',
     'assets/components/foundation-sites/js/foundation.interchange.js',
     'assets/components/foundation-sites/js/foundation.magellan.js',
-    'assets/components/foundation-sites/js/foundation.offcanvas.js',
+    'assets/components/foundation-sites/js/foundation.offcanvas.js',    
     'assets/components/foundation-sites/js/foundation.orbit.js',
     'assets/components/foundation-sites/js/foundation.responsiveMenu.js',
     'assets/components/foundation-sites/js/foundation.responsiveToggle.js',
