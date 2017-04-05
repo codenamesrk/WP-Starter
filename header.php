@@ -31,11 +31,13 @@
 			<div class="title-bar-container" data-sticky data-top-anchor="front-hero:bottom" data-options="marginTop:0;" data-sticky-on="small">
 				<div class="title-bar">
 					<div class="title-bar-left">
-						<button class="menu-icon" type="button" data-open="offCanvas"></button>
-						<span class="title-bar-title">Foundation title bar with top off-canvas</span>
+						<button class="menu-icon" type="button" data-open="offCanvas"></button>						
+					</div>
+					<div class="title-bar-center">
+						<h2>Mathew A Varghese</h2>
 					</div>
 					<div class="title-bar-right">
-						social icons
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 					</div>
 				</div>
 			</div>		
