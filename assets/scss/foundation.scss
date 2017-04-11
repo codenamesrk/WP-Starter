@@ -73,6 +73,8 @@
   My custom styles:
   Add your scss files below to structure your project styles
 */
+// Mixins
+@import "components/mixins";
 
 // Modules
 @import "modules/navigation";

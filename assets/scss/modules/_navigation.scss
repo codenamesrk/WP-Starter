@@ -1,4 +1,72 @@
 // Title Bar
+.site-header {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 68px;
+    background-color: $white;
+    border-bottom: 1px solid $white;
+    z-index: 1;
+    transition: height 0.3s ease-out, background-color 0.3s ease-out, border-bottom-color 0.3s ease-out;
+	
+	@include breakpoint(medium) {
+		height: 98px;
+	}    
+}
+.site-header__wrapper {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+ 
+.site-header__nav,
+.site-header__social {
+	@include vertical-center;
+	cursor: pointer;
+}
+.site-header__nav {
+    left: 16px;
+    width: 45px;
+    font-size: 0.75rem;
+    z-index: 3;
+    transition: top 0.3s ease-out;
+    text-transform: uppercase;
+    @include breakpoint(medium) {
+    	left: 3%;
+    }
+}
+.site-header__logo {    
+    width: 104px;
+    z-index: 2;
+    margin: 0;
+    @include absolute-center;
+    cursor: pointer;
+    transition: top 0.2s ease-out, opacity 0.2s ease-out;
+    // @include breakpoint(medium) {
+    // 	top: 23px;
+    // 	width: 124px;
+   	// 	height: 34px;
+    // }
+}
+.site-header__social {
+	right: 16px;
+    z-index: 3;
+    @include breakpoint(medium) {
+    	right: 3%;
+    }
+}
+// Social Icon Menu
+.meta-nav {
+	li > a {
+		padding: 0 0 0 1rem;
+		svg {
+			width: 20px;
+    		height: 16px;
+		}
+	}
+}
+
 .title-bar-container {
 	width: 100%;
 }
@@ -30,10 +98,11 @@
 .title-bar-right a > i {
 	font-size: 150%;
 }
-// Mobile menu
+// OffCanvas Menu
 .off-canvas {
-	> ul.menu {
+	> ul.menu {		
 		height: 100vh;
+		width: 250px;
 		padding: 1rem;
 
 		a {
@@ -61,9 +130,31 @@
 
 	.menu .active > a { background-color: lighten($outer-space, 10%); }
 
-
 }
-
+// Site Search Offcanvas
+.site-search {
+	padding: $global-padding;
+	background-color: $white;
+	.site-search__input {
+		@include vertical-center;
+	    width: 50%;
+	    padding-right: 30px;
+	    input {
+	    	box-shadow: none;
+	    	border: none;
+	    	border-bottom: 1px solid $light-gray;
+	    }
+	}
+	.site-search__close {
+		.close-button {
+			@include vertical-center;
+		}
+	}
+}
+// OffCanvas Menu Positions
+.position-top {
+	height: 120px;
+}
 .title-bar-title {
 	a {
 		font-size: 1rem;
