@@ -5,23 +5,30 @@ Template Name: Front
 get_header(); ?>
 
 <header id="front-hero" role="banner">
-	<div class="marketing">
-		<div class="tagline">
-			<h1><?php bloginfo( 'name' ); ?></h1>
-			<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
-			<a role="button" class="download large button sites-button hide-for-small-only" href="https://github.com/olefredrik/foundationpress">Download FoundationPress</a>
-		</div>
-
-		<div id="watch">
-			<section id="stargazers">
-				<a href="https://github.com/olefredrik/foundationpress">1.5k stargazers</a>
-			</section>
-			<section id="twitter">
-				<a href="https://twitter.com/olefredrik">@olefredrik</a>
-			</section>
-		</div>
+	<div class="featured-slider-wrapper">
+		<div class="featured-slider medium-up-3 large-up-4">
+			<div class="column column-block">
+				<div>
+					<img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/3.png" alt="">
+				</div>
+			</div>
+			<div class="column column-block">
+				<div><img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/2.jpg" alt=""></div>
+			</div>
+			<div class="column column-block">
+				<div><img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/4.jpg" alt=""></div>
+			</div>
+			<div class="column column-block">
+				<div><img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/1.png" alt=""></div>
+			</div>
+			<div class="column column-block">
+				<div><img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/2.jpg" alt=""></div>
+			</div>
+			<div class="column column-block">
+				<div><img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/3.png" alt=""></div>
+			</div>			
+		</div>		
 	</div>
-
 </header>
 
 <?php do_action( 'foundationpress_before_content' ); ?>

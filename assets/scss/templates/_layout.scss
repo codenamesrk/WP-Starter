@@ -1,7 +1,10 @@
 // Layout
 #site-container {
 	// max-width: 1200px;
-	margin: 68px auto 0 auto;	
+	margin: 68px auto 0 auto;
+	@include breakpoint(medium) {
+		margin: 98px auto 0 auto;
+	}	
 }
 #page {
 	.wps {
