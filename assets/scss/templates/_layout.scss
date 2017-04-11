@@ -1,0 +1,16 @@
+// Layout
+.site-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#page {
+	.wps {
+	padding-left: $global-mobile-padding;
+	padding-right: $global-mobile-padding;
+	}
+	.wps-nl {
+		@include breakpoint(medium) {
+			padding-left: 0;
+		}
+	}
+}

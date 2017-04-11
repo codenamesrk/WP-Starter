@@ -1,0 +1,26 @@
+// Page About
+.about-top {
+	@include grid-row();
+}
+.left-content, .right-content {
+	@include grid-column(12);
+}
+.left-content {
+	@include breakpoint(medium) {
+		@include grid-column(5);
+	}
+	.author-pic {
+		width: 100%;
+		margin-bottom: 1.5rem;
+	}
+}
+.right-content {
+	@include breakpoint(medium) {
+		@include grid-column(7);
+	}		
+}
+.author-info .contact-details {
+	li {
+		margin-bottom: $global-margin;
+	}
+}

@@ -1,14 +1,12 @@
 #page {
-  @include grid-row();
-  margin-top: 3rem;
+	@include grid-row();
+	margin-top: 1rem;
 
-  .main-content {
-    @include breakpoint(small) {
-      @include grid-column(12);
-    }
-
-    @include breakpoint(medium) {
-      @include grid-column(8);
-    }
-  }
+	.main-content {
+		display: block;		
+		// @include grid-column(12);		
+	}
+	header {
+		@include grid-column(12);
+	}
 }

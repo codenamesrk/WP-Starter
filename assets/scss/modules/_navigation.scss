@@ -9,6 +9,7 @@
 	@include breakpoint(large){
 		padding: $titlebar-padding-lg;
 	}
+	border-bottom: 1px solid $dark-gray;
 }
 .title-bar-left, .title-bar-right {
 	width: 10%;

@@ -28,7 +28,7 @@
 
 	<div id="site-container">
 		<header id="masthead" class="site-header" role="banner" data-sticky-container>
-			<div class="title-bar-container" data-sticky data-top-anchor="front-hero:bottom" data-options="marginTop:0;" data-sticky-on="small">
+			<div class="title-bar-container" data-sticky data-top-anchor="container-inner" data-options="marginTop:0;" data-sticky-on="small">
 				<div class="title-bar">
 					<div class="title-bar-left">
 						<button class="menu-icon" type="button" data-open="offCanvas"></button>						
@@ -43,5 +43,5 @@
 			</div>		
 		</header>
 
-		<section class="container">
+		<section id="container-inner" class="container">
 			<?php do_action( 'foundationpress_after_header' );
