@@ -1,7 +1,7 @@
 // Web Font Loader
 window.WebFontConfig = {
 	google: {
-	  families: ['Playfair+Display:400,700', 'Playfair+Display:400,700']
+	  families: ['Playfair+Display:400,700', 'Roboto:400,700']
 	}
 };
 (function() {

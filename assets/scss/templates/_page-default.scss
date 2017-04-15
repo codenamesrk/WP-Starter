@@ -6,7 +6,7 @@
 		display: block;		
 		// @include grid-column(12);		
 	}
-	header {
+	.section-header {
 		@include grid-column(12);
 	}
 }

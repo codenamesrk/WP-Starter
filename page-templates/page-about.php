@@ -12,7 +12,7 @@ get_header(); ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 		<article <?php post_class(['main-content','clearfix']) ?>>
 			<section class="about-top">
-				<header class="wps text-center">
+				<header class="section-header wps text-center">
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 					<?php edit_post_link( __( 'Edit', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
 				</header>

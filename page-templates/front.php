@@ -31,80 +31,120 @@ get_header(); ?>
 	</div>
 </header>
 
-<?php do_action( 'foundationpress_before_content' ); ?>
-<?php while ( have_posts() ) : the_post(); ?>
-<section class="intro" role="main">
-	<div class="fp-intro">
+<div id="page">
+	<?php do_action( 'foundationpress_before_content' ); ?>
+	<?php while ( have_posts() ) : the_post(); ?>
 
-		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
-			<div class="entry-content">
-				<?php the_content(); ?>
-			</div>
-			<footer>
-				<?php
-					wp_link_pages(
-						array(
-							'before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ),
-							'after'  => '</p></nav>',
-						)
-					);
-				?>
-				<p><?php the_tags(); ?></p>
-			</footer>
-			<?php do_action( 'foundationpress_page_before_comments' ); ?>
-			<?php comments_template(); ?>
-			<?php do_action( 'foundationpress_page_after_comments' ); ?>
+	<!-- Section Intro -->
+	<section class="section intro" role="main">
+		<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
+		<div class="wps fp-intro text-center">
+			<h2 class="section-title">Vestibulum id liqula porta felis</h2>
+			<?php the_content(); ?>
+			<a href="#" class="hollow button">about the author</a>
 		</div>
+	</section>
+	<!-- /Section Intro -->
 
+	<div class="section section-divider">
+		<hr />
 	</div>
 
-</section>
-<?php endwhile;?>
-<?php do_action( 'foundationpress_after_content' ); ?>
+	<!-- /Section Intro -->
+	<section class="section musings">
+		<header class="wps section-title-block">
+			<h2>Musings</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit laudantium culpa delectus harum quaerat sit asperiores</p>
+		</header>
+		<div class="post-grid small-up-1 medium-up-2 large-up-3">
+			<div class="column column-block post">
+				<article>
+					<h4 class="post-date">Dec 15</h4>
+					<h4 class="post-title">Visions of our future from the past</h4>
+					<div class="post-divider"></div>
+					<ul class="post-cats no-bullet menu">
+						<li><em>Postmodernism</em></li>
+					</ul>
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores saepe perferendis, repudiandae fugiat. Sapiente, animi debitis mollitia dolorem magnam, ut consequatur itaque similique, enim illum ex odit. Quo, magnam, numquam</p>
+					</div>
+				</article>
+			</div>
+			<div class="column column-block post">
+				<article>
+					<h4 class="post-date">Dec 15</h4>
+					<h4 class="post-title">Visions of our future from the past</h4>
+					<div class="post-divider"></div>
+					<ul class="post-cats no-bullet menu">
+						<li><em>Postmodernism</em></li>
+					</ul>
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores saepe perferendis, repudiandae fugiat. Sapiente, animi debitis mollitia dolorem magnam, ut consequatur itaque similique, enim illum ex odit. Quo, magnam, numquam</p>
+					</div>
+				</article>
+			</div>
+			<div class="column column-block post">
+				<article>
+					<h4 class="post-date">Dec 15</h4>
+					<h4 class="post-title">Visions of our future from the past</h4>
+					<div class="post-divider"></div>
+					<ul class="post-cats no-bullet menu">
+						<li><em>Postmodernism</em></li>
+					</ul>
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores saepe perferendis, repudiandae fugiat. Sapiente, animi debitis mollitia dolorem magnam, ut consequatur itaque similique, enim illum ex odit. Quo, magnam, numquam</p>
+					</div>
+				</article>
+			</div>
+			<div class="column column-block post">
+				<article>
+					<h4 class="post-date">Dec 15</h4>
+					<h4 class="post-title">Visions of our future from the past</h4>
+					<div class="post-divider"></div>
+					<ul class="post-cats no-bullet menu">
+						<li><em>Postmodernism</em></li>
+					</ul>
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores saepe perferendis, repudiandae fugiat. Sapiente, animi debitis mollitia dolorem magnam, ut consequatur itaque similique, enim illum ex odit. Quo, magnam, numquam</p>
+					</div>
+				</article>
+			</div>
+			<div class="column column-block post">
+				<article>
+					<h4 class="post-date">Dec 15</h4>
+					<h4 class="post-title">Visions of our future from the past</h4>
+					<div class="post-divider"></div>
+					<ul class="post-cats no-bullet menu">
+						<li><em>Postmodernism</em></li>
+					</ul>
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores saepe perferendis, repudiandae fugiat. Sapiente, animi debitis mollitia dolorem magnam, ut consequatur itaque similique, enim illum ex odit. Quo, magnam, numquam</p>
+					</div>
+				</article>
+			</div>
+			<div class="column column-block post">
+				<article>
+					<h4 class="post-date">Dec 15</h4>
+					<h4 class="post-title">Visions of our future from the past</h4>
+					<div class="post-divider"></div>
+					<ul class="post-cats no-bullet menu">
+						<li><em>Postmodernism</em></li>
+					</ul>
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores saepe perferendis, repudiandae fugiat. Sapiente, animi debitis mollitia dolorem magnam, ut consequatur itaque similique, enim illum ex odit. Quo, magnam, numquam</p>
+					</div>
+				</article>
+			</div>
+		</div>
+		<div class="text-center">
+			<a href="#" class="hollow button">read more articles</a>
+		</div>
+	</section>
+	<!-- /Section Intro -->
 
-<div class="section-divider">
-	<hr />
+	<?php endwhile;?>
+	<?php do_action( 'foundationpress_after_content' ); ?>
 </div>
-
-
-<section class="benefits">
-	<header>
-		<h2>Build Foundation based sites, powered by WordPress</h2>
-		<h4>Foundation is the professional choice for designers, developers and teams. <br /> WordPress is by far, <a href="http://trends.builtwith.com/cms">the world's most popular CMS</a> (currently powering 38% of the web).</h4>
-	</header>
-
-	<div class="semantic">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demo/semantic.svg" alt="semantic">
-		<h3>Semantic</h3>
-		<p>Everything is semantic. You can have the cleanest markup without sacrificing the utility and speed of Foundation.</p>
-	</div>
-
-	<div class="responsive">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demo/responsive.svg" alt="responsive">
-		<h3>Responsive</h3>
-		<p>You can build for small devices first. Then, as devices get larger and larger, layer in more complexity for a complete responsive design.</p>
-
-	</div>
-
-	<div class="customizable">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demo/customizable.svg" alt="customizable">
-		<h3>Customizable</h3>
-		<p>You can customize your build to include or remove certain elements, as well as define the size of columns, colors, font size and more.</p>
-
-	</div>
-
-	<div class="professional">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demo/professional.svg" alt="professional">
-		<h3>Professional</h3>
-		<p>Millions of designers and developers depend on Foundation. We have business support, training and consulting to help grow your product or service.</p>
-	</div>
-
-	<div class="why-foundation">
-		<a href="/kitchen-sink">See what's in Foundation out of the box →</a>
-	</div>
-
-</section>
 
 
 

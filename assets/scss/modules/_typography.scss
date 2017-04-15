@@ -1,1 +1,13 @@
 // Typography
+.section-title {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	@include breakpoint(medium) {
+		font-size: 2.25rem;
+		margin-bottom: 1.25rem;
+	}
+	@include breakpoint(large) {
+		font-size: 2.25rem;
+		margin-bottom: 1.25rem;
+	}
+}

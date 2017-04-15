@@ -17,8 +17,8 @@
 	.column {		
 		text-align: center;		
 		div {
+			display: inline-block;
 			margin: 0.5rem;
-			margin: 0 auto;
 			max-height: 300px;	
 			// background: $outer-space;
 		}
@@ -27,20 +27,22 @@
 		margin-bottom: 0;
 	}
 	.slick-slide img {
-		@include img-cover();
-		height: 300px;					
+		@include breakpoint(medium) {
+			@include img-cover();
+		}
+		height: 300px !important;					
 	}
 }
 #front-hero {
 	@include grid-row();
-	@include grid-row-size(expand);
-	margin-bottom: 5rem;
+	@include grid-row-size(expand);	
 
 	@include breakpoint(small) {
 		background: url('../images/demo/hero-bg-foundation-6-small.svg') bottom center;
 		background-size: cover;
 		background-position: bottom;
 		height: auto;
+		margin-bottom: 1.5rem;
 	}
 
 	@include breakpoint(medium) {
@@ -48,37 +50,45 @@
 		background-size: cover;
 		background-position: center;
 		height: rem-calc(360);
-		// margin: 0 0 rem-calc(72);
+		margin-bottom: 5rem;	
 	}
 
 }
 
 // Intro
 .intro {
-	@include grid-row();
+	// @include grid-row();
 
 	.fp-intro {
-		@include breakpoint(small) {
-			@include grid-column(12);
-		}
-
+		@include grid-column(12);			
 		@include breakpoint(medium) {
-			@include grid-column(10);
-			@include grid-column-offset(1);
-
-			h2 {
-				font-weight: 300;
-				margin-bottom: 1.5rem;
-			}
-
-			h4 {
-				font-size: 1.125rem;
-				line-height: 1.6;
-				color: #777;
-				margin-bottom: 2rem;
-			}
+			@include grid-column(7);
+			@include grid-col-pos(center);
 		}
 	}
+
+	// .fp-intro {
+	// 	@include breakpoint(small) {
+	// 		@include grid-column(12);
+	// 	}
+
+	// 	@include breakpoint(medium) {
+	// 		@include grid-column(10);
+	// 		@include grid-column-offset(1);
+
+	// 		h2 {
+	// 			font-weight: 300;
+	// 			margin-bottom: 1.5rem;
+	// 		}
+
+	// 		h4 {
+	// 			font-size: 1.125rem;
+	// 			line-height: 1.6;
+	// 			color: #777;
+	// 			margin-bottom: 2rem;
+	// 		}
+	// 	}
+	// }
 }
 
 // Section divider
@@ -91,7 +101,15 @@
 		box-sizing: border-box;
 	}
 }
-
+.post-divider {
+	width: 50px;
+	border: 1px solid red;
+	position: relative;
+	margin-bottom: $global-mobile-padding - 0.5;
+	@include breakpoint(medium) {
+		margin-bottom: $global-mobile-padding;
+	}
+}
 
 // Benefits
 .benefits {
