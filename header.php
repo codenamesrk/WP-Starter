@@ -43,7 +43,7 @@
 							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 						</li>
 						<li>
-							<a href="#" data-open="siteSearch">
+							<a data-open="siteSearch">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.71 16.71"><title>Search</title><path class="cls-1" d="M15.71,15.29L10.44,10a5.94,5.94,0,1,0-1.58,1.25l5.43,5.43ZM2,6a4,4,0,1,1,4,4A4,4,0,0,1,2,6Z"></path></svg>
 							</a>
 						</li>						
