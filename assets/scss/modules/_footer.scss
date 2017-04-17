@@ -19,5 +19,38 @@
 			margin: 0;
 			padding: 0;
 		}
+
+		.bottom-logo,
+		.footer-menu {
+			@include grid-col;			
+		}
+		.bottom-logo {			
+			font-family: $header-font-family;
+			font-size: 90%;
+			p {
+				margin-bottom: 0;
+				@include breakpoint(medium) {
+					padding: 0.7rem 0;
+				}
+			}
+			@include breakpoint(medium) {
+				@include grid-col-size(5);
+			}
+		}
+		.footer-menu {
+			@include show-for(medium);
+			@include breakpoint(medium) {
+				@include grid-col-size(7);
+			}
+			.menu {
+				float: right;
+			}
+		}
+	}
+
+	.footer-logo {
+		height: 100%;
+		max-height: 16px;
+		margin-right: 10px; 
 	}
 }

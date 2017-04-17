@@ -56,6 +56,9 @@
 		}
 	}
 	@include breakpoint(large) {
+		padding-left: $global-mobile-padding/2;
+		padding-right: $global-mobile-padding/2;
+			
 		&:nth-of-type(3n+1){
 			padding-left: $global-mobile-padding;
 			padding-right: $global-mobile-padding/2;

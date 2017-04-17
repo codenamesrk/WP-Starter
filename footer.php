@@ -14,7 +14,8 @@
 				<div id="footer-container">
 					<footer id="footer">
 						<?php do_action( 'foundationpress_before_footer' ); ?>
-						<?php dynamic_sidebar( 'footer-widgets' ); ?>
+						<?php dynamic_sidebar( 'left-footer-widget' ); ?>
+						<?php dynamic_sidebar( 'right-footer-widget' ); ?>
 						<?php do_action( 'foundationpress_after_footer' ); ?>
 					</footer>
 				</div>
