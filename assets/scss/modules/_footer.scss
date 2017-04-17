@@ -1,18 +1,23 @@
 #footer-container {
-  max-width: 100%;
-  width: 100%;
-  margin: 0 auto;
-  border-top: 1px solid #ccc;
-  margin-top: rem-calc(60);
+	@include grid-row();
+	border-top: 1px solid #ccc;
+	margin-top: 1.5rem;
+	@include breakpoint(medium) {
+		margin-top: 3rem;
+	}
 
-  #footer {
-    @include grid-row();
-    padding: rem-calc(30) 0;
+	#footer {
+		@include grid-row();
+		padding: 1.5rem;
 
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-  }
+		@include breakpoint(medium) {
+			padding: 2rem;
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+	}
 }
