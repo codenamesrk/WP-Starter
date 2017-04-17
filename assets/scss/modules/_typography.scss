@@ -11,3 +11,13 @@
 		margin-bottom: 1.25rem;
 	}
 }
+// Category Menu
+.category-menu {
+	font-size: 80%;
+	font-weight: 700;
+	text-transform: uppercase;
+	.menu .active a {
+		background: none;
+		color: red;
+	}
+}

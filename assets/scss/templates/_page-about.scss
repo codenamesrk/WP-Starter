@@ -1,12 +1,14 @@
 // Page About
-.about-top {
-	@include grid-row();
+.about-btm > .right-content > .subsection {
+	@include breakpoint(large) {
+		padding-left: 2rem;
+	}
 }
 .left-content, .right-content {
 	@include grid-column(12);
 }
 .left-content {
-	@include breakpoint(medium) {
+	@include breakpoint(large) {
 		@include grid-column(5);
 	}
 	.author-pic {
@@ -15,9 +17,16 @@
 	}
 }
 .right-content {
-	@include breakpoint(medium) {
+	@include breakpoint(large) {
 		@include grid-column(7);
-	}		
+		padding-left: 1rem !important;		
+	}
+	@include breakpoint(large) {
+		padding-left: 2rem !important;	
+	}			
+}
+.wps.right-content:first-of-type {
+	background: red;
 }
 .author-info .contact-details {
 	li {

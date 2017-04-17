@@ -10,6 +10,20 @@
 	.wps {
 	padding-left: $global-mobile-padding;
 	padding-right: $global-mobile-padding;
+		&.lf {
+			@include breakpoint(medium only) {
+				text-align: center;
+				.author-pic {
+					width: auto;
+				}
+			}
+		}
+		&.rf{
+			padding-top: $global-mobile-padding;
+			@include breakpoint(large) {
+				padding-top: $global-mobile-padding + 1;
+			}
+		}
 	}
 	.wps-nl {
 		@include breakpoint(medium) {
