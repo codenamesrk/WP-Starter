@@ -21,12 +21,12 @@ function foundationpress_pagination() {
 		'total' => $wp_query->max_num_pages,
 		'mid_size' => 5,
 		'prev_next' => true,
-	    'prev_text' => __( '&laquo;', 'foundationpress' ),
-	    'next_text' => __( '&raquo;', 'foundationpress' ),
+	    'prev_text' => __( '&laquo; Previous', 'foundationpress' ),
+	    'next_text' => __( 'Next &raquo;', 'foundationpress' ),
 		'type' => 'list',
 	) );
 
-	$paginate_links = str_replace( "<ul class='page-numbers'>", "<ul class='pagination'>", $paginate_links );
+	$paginate_links = str_replace( "<ul class='page-numbers'>", "<ul class='pagination text-center'>", $paginate_links );
 	$paginate_links = str_replace( '<li><span class="page-numbers dots">', "<li><a href='#'>", $paginate_links );
 	$paginate_links = str_replace( "<li><span class='page-numbers current'>", "<li class='current'><a href='#'>", $paginate_links );
 	$paginate_links = str_replace( '</span>', '</a>', $paginate_links );
@@ -34,10 +34,8 @@ function foundationpress_pagination() {
 	$paginate_links = preg_replace( '/\s*page-numbers/', '', $paginate_links );
 
 	// Display the pagination if more than one page is found.
-	if ( $paginate_links ) {
-		echo '<div class="pagination-centered">';
-		echo $paginate_links;
-		echo '</div><!--// end .pagination -->';
+	if ( $paginate_links ) {		
+		echo $paginate_links;		
 	}
 }
 endif;
