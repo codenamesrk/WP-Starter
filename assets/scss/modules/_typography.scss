@@ -13,11 +13,15 @@
 }
 // Category Menu
 .category-menu {
+	@include show-for(large);
 	font-size: 80%;
 	font-weight: 700;
 	text-transform: uppercase;
 	.menu .active a {
 		background: none;
 		color: red;
-	}
+	}	
+}
+.category-mobile-menu {
+	@include hide-for(large);
 }

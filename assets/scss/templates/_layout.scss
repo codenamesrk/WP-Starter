@@ -36,6 +36,12 @@
 .post-grid {
 	@include grid-row();
 }
+.post-grid {
+	margin-top: 1.5rem;
+	@include breakpoint(medium) {
+		margin-top: 2.5rem;
+	}
+}
 .section {	
 	.section-title-block {
 		@include grid-column(12);			
