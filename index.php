@@ -50,6 +50,10 @@ get_header(); ?>
 				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
 			</nav>
 		<?php endif; ?>		
-	</section>	
+	</section>
+	<div class="section-divider">
+		<hr>
+	</div>	
+	<?php get_template_part('template-parts/author','bio'); ?>
 </div>
 <?php get_footer();

@@ -1,0 +1,9 @@
+// Page Blog
+.author-bio {
+	@include grid-row();
+	.author-pic {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+	}
+}
