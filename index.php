@@ -55,5 +55,6 @@ get_header(); ?>
 		<hr>
 	</div>	
 	<?php get_template_part('template-parts/author','bio'); ?>
+	<?php do_action( 'foundationpress_after_content' ); ?>
 </div>
 <?php get_footer();

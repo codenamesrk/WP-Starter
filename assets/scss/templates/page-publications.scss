@@ -1,0 +1,26 @@
+// Publications
+.papers,
+.books {
+	@include grid-row();
+}
+.paper {
+	@include grid-column(12);
+}
+.paper,
+.book {
+	p { margin-bottom: 0; }
+	margin-bottom: $global-mobile-padding;
+}
+.book-cover {
+	@include breakpoint(small only) {
+		width: 120px;
+	}
+}
+.book-details {	
+	@include breakpoint(medium) {
+		padding-left: $global-mobile-padding !important;
+	}
+	@include breakpoint(large) {
+		padding-left: $global-mobile-padding + 0.5 !important;
+	}			
+}
