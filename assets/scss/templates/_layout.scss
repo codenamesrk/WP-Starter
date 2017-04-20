@@ -6,10 +6,15 @@
 		margin: 98px auto 0 auto;
 	}	
 }
+#page,
+#single-post {
+	.wps {
+		padding-left: $global-mobile-padding;
+		padding-right: $global-mobile-padding;
+	}
+}
 #page {
 	.wps {
-	padding-left: $global-mobile-padding;
-	padding-right: $global-mobile-padding;
 		&.lf {
 			@include breakpoint(medium only) {
 				text-align: center;
@@ -90,23 +95,30 @@
 	}
 	article {
 		@include breakpoint(medium) {
-			padding: $global-mobile-padding;
-			background: $light-gray;		
+			background: $light-gray;
+			padding: $global-mobile-padding;			
 			&:hover {
 				background: $dark-gray;
 			}
 		}
-		.post-date,
-		.post-title,
-		.post-cats {
-			margin-bottom: $global-mobile-padding - 0.5;
-			@include breakpoint(medium) {
-				margin-bottom: $global-mobile-padding;
-			}
-		}
-		.post-date {
-			text-transform: uppercase;
-			font-weight: 100;			
-		}				
 	}
+}
+
+article {
+	.post-date,
+	.post-title,
+	.post-cats {
+		margin-bottom: $global-mobile-padding - 0.5;
+		@include breakpoint(medium) {
+			margin-bottom: $global-mobile-padding;
+		}
+	}
+	.post-date {
+		text-transform: uppercase;
+		font-weight: 100;			
+	}				
+}
+
+.post-categories {
+	@include menu-base;
 }

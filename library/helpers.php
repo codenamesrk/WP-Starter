@@ -45,4 +45,12 @@ function display_categories($categories) {
 	$cats .= '<li></ul></ul></div>';
 	return $cats;
 }
-
+function singleCategories(){
+	$categories = get_the_category(); 
+	$cats = '<ul class="menu">';
+	foreach ($categories as $cat) {
+		$cats .= '<li><a href="' . esc_url( get_category_link( $cat->term_id ) ) . '"><em>'. $cat->name .'</em></a></li>';
+	}
+	$cats .= '</ul>';
+	return $cats;
+}

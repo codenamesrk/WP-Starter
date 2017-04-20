@@ -166,6 +166,10 @@
 
 // Basic styles for post navigation. Nicolas Gallagher's "Micro clearfix"
 // https://css-tricks.com/snippets/css/clear-fix/
+.post-navigation {
+	padding: $global-mobile-padding 0;
+	@include grid-row();
+}
 .post-navigation:before,
 .post-navigation:after {
 	content: "";
@@ -175,6 +179,31 @@
 .post-navigation:after {
 	clear:both;
 }
-
-.nav-previous { float:left; }
-.nav-next { float:right; }
+.nav-previous,
+.nav-next {
+	@include grid-column(12);
+	@include breakpoint(medium) {
+		@include grid-column(6);
+	}
+}
+.nav-previous a:before,
+.nav-next a:after {
+	@include fa-icon();
+}
+.nav-previous {
+	a { 	
+		&:before {
+			content: $fa-var-angle-left;
+			margin-right: $global-margin;
+		}
+	} 
+}
+.nav-next {
+	text-align-last: right;
+	a { 	
+		&:after {
+			content: $fa-var-angle-right;
+			margin-left: $global-margin;
+		}
+	}	
+}

@@ -19,7 +19,7 @@ if ( have_comments() ) :
 			array(
 				'walker'            => new Foundationpress_Comments(),
 				'max_depth'         => '',
-				'style'             => 'ol',
+				'style'             => 'ul',
 				'callback'          => null,
 				'end-callback'      => null,
 				'type'              => 'all',
@@ -78,6 +78,7 @@ if ( comments_open() ) :
 			);
 		?>
 	</h3>
+	<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
 	<p class="cancel-comment-reply"><?php cancel_comment_reply_link(); ?></p>
 	<?php if ( get_option( 'comment_registration' ) && ! is_user_logged_in() ) : ?>
 	<p>
@@ -90,9 +91,16 @@ if ( comments_open() ) :
 		?>
 	</p>
 	<?php else : ?>
-	<form action="<?php echo get_option( 'siteurl' ); ?>/wp-comments-post.php" method="post" id="commentform">
+	<form action="<?php echo get_option( 'siteurl' ); ?>/wp-comments-post.php" method="post" id="commentform" data-abide novalidate>
+	<div data-abide-error class="alert callout" style="display: none;">
+		<p><i class="fi-alert"></i> There are some errors in your form.</p>
+	</div>
+	<div class="response">
+		<div class="comment-block">
+			<textarea name="comment" id="comment" tabindex="4" rows="5" placeholder="Comment *" required></textarea>
+		</div>	
 		<?php if ( is_user_logged_in() ) : ?>
-		<p>
+		<div class="comment-block">
 			<?php
 				/* translators: %1$s: site url, %2$s: user identity  */
 				printf( __(
@@ -101,49 +109,21 @@ if ( comments_open() ) :
 					$user_identity
 				);
 			?> <a href="<?php echo wp_logout_url( get_permalink() ); ?>" title="<?php __( 'Log out of this account', 'foundationpress' ); ?>"><?php _e( 'Log out &raquo;', 'foundationpress' ); ?></a>
-		</p>
-		<?php else : ?>
-		<p>
-			<label for="author">
-				<?php
-					_e( 'Name', 'foundationpress' ); if ( $req ) { _e( ' (required)', 'foundationpress' ); }
-				?>
-			</label>
-			<input type="text" class="five" name="author" id="author" value="<?php echo esc_attr( $comment_author ); ?>" size="22" tabindex="1" <?php if ( $req ) { echo "aria-required='true'"; } ?>>
-		</p>
-		<p>
-			<label for="email">
-				<?php
-					_e( 'Email (will not be published)', 'foundationpress' ); if ( $req ) { _e( ' (required)', 'foundationpress' ); }
-				?>
-			</label>
-			<input type="text" class="five" name="email" id="email" value="<?php echo esc_attr( $comment_author_email ); ?>" size="22" tabindex="2" <?php if ( $req ) { echo "aria-required='true'"; } ?>>
-		</p>
-		<p>
-			<label for="url">
-				<?php
-					_e( 'Website', 'foundationpress' );
-				?>
-			</label>
-			<input type="text" class="five" name="url" id="url" value="<?php echo esc_attr( $comment_author_url ); ?>" size="22" tabindex="3">
-		</p>
+		</div>	
+		<?php else : ?>		
+		<div class="user-info-block">
+			<div class="block-4">
+				<input type="text" class="five" name="author" id="author" value="<?php echo esc_attr( $comment_author ); ?>" size="22" placeholder="Name *" tabindex="1" <?php if ( $req ) { echo "aria-required='true'"; } ?> required pattern="alpha">
+			</div>
+			<div class="block-4">
+				<input type="text" class="five" name="email" id="email" value="<?php echo esc_attr( $comment_author_email ); ?>" size="22" placeholder="Email *" tabindex="2" <?php if ( $req ) { echo "aria-required='true'"; } ?> required pattern="email">
+			</div>
+			<div class="block-4">
+				<input type="text" class="five" name="url" id="url" value="<?php echo esc_attr( $comment_author_url ); ?>" size="22" placeholder="Website" tabindex="3" pattern="url">
+			</div>
+		</div>
 		<?php endif; ?>
-		<p>
-			<label for="comment">
-					<?php
-						_e( 'Comment', 'foundationpress' );
-					?>
-			</label>
-			<textarea name="comment" id="comment" tabindex="4"></textarea>
-		</p>
-		<p id="allowed_tags" class="small"><strong>XHTML:</strong>
-			<?php
-				_e( 'You can use these tags:','foundationpress' );
-			?>
-			<code>
-				<?php echo allowed_tags(); ?>
-			</code>
-		</p>
+		</div>	
 		<p><input name="submit" class="button" type="submit" id="submit" tabindex="5" value="<?php esc_attr_e( 'Submit Comment', 'foundationpress' ); ?>"></p>
 		<?php comment_id_fields(); ?>
 		<?php do_action( 'comment_form', $post->ID ); ?>

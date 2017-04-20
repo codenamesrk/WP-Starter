@@ -13,7 +13,7 @@
 		<h4 class="post-date"><?php echo get_the_date(); ?></h4>
 		<h4 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 		<div class="post-divider"></div>
-		<ul class="post-cats no-bullet menu">
+		<ul class="post-cats menu">
 			<li><em>Postmodernism</em></li>
 		</ul>
 		<div>

@@ -65,17 +65,19 @@ class Foundationpress_Comments extends Walker_Comment {
 			<?php
 				/* translators: %s: comment author link */
 				printf( __(
-					'<cite class="fn">%s</cite>', 'foundationpress' ),
+					'<strong class="fn">%s</strong>', 'foundationpress' ),
 					get_comment_author_link()
 				);
 			?>
-			<time datetime="<?php echo comment_date( 'c' ) ?>"><a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf( get_comment_date(), get_comment_time() ) ?></a></time>
+				<div class="comment-metadata">
+					<time datetime="<?php echo comment_date( 'c' ) ?>"><a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf( get_comment_date(), get_comment_time() ) ?></a></time>
+				</div>			
 
 			</div><!-- /.comment-author -->
 
 		</header>
 
-				<section id="comment-content-<?php comment_ID(); ?>" class="comment">
+				<section id="comment-content-<?php comment_ID(); ?>" class="comment-body">
 					<?php if ( ! $comment->comment_approved ) : ?>
 							<div class="notice">
 					<p class="bottom"><?php _e( 'Your comment is awaiting moderation.' ); ?></p>

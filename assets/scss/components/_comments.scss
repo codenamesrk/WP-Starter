@@ -1,0 +1,71 @@
+// Comments
+.comment-list {
+	list-style-type: none;	
+	margin-left: 0;
+	li {
+		margin-bottom: $global-margin + 0.75;
+	}	
+	.reply {		
+	    font-size:80%;
+	    text-transform: uppercase;
+	    color: #b1b1b1;
+	}
+	.children {
+		list-style-type: none;
+		margin-top: $global-margin;
+	}
+}
+.comment-author {
+	margin-bottom: $global-margin;
+	.avatar {
+		max-width: 50px;
+		margin-right: $global-margin;
+	    height: auto;
+	    float: left;
+	    border-radius: 50%;
+	}
+	.fn {
+		font-size: 90%;
+		font-weight: 400;
+		margin-top: 5px;
+	}
+	.comment-metadata {
+		color: #b1b1b1;
+	    font-size: 80%;	    
+	}
+}
+
+// Response
+.response,
+.comment-block,
+.user-info-block {
+	@include grid-row();	
+}
+.comment-block {
+	textarea {
+		margin-bottom: $global-padding;
+	}
+}
+.user-info-block {	
+	.block-4 {
+		@include grid-column(12);
+		@include grid-column-collapse;
+	}
+	.block-4 {
+		@include breakpoint(large) {
+			@include grid-column(4);
+			&:first-of-type {
+				padding-left: 0;
+				padding-right: $global-padding/2;
+			}
+			&:nth-of-type(2){
+			padding-left: $global-padding/2;
+			padding-right: $global-padding/2;
+			}
+			&:last-of-type {
+				padding-right: 0;
+				padding-left: $global-padding/2;
+			}			
+		}			
+	}	
+}

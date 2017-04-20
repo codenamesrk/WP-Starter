@@ -106,9 +106,17 @@
 	border: 1px solid red;
 	position: relative;
 	margin-bottom: $global-mobile-padding - 0.5;
+	
 	@include breakpoint(medium) {
 		margin-bottom: $global-mobile-padding;
 	}
+	
+	&.center {
+		margin: 0 auto $global-mobile-padding - 0.5 auto;
+		@include breakpoint(medium) {
+			margin: 0 auto $global-mobile-padding auto;
+		}
+	}	
 }
 
 // Benefits

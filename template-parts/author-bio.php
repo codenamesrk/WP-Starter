@@ -8,6 +8,7 @@
  * @since FoundationPress 1.0.0
  */
 ?>
+<?php if( !is_single() ) :  ?>
 	<section class="author-bio">
 		<div class="medium-9 medium-centered columns text-center">
 			<img class="author-pic" src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2010/07/matt.jpg" alt="">
@@ -22,3 +23,21 @@
 			</div>			
 		</div>
 	</section>
+<?php else : ?>
+	<div class="section-divider">
+		<hr>
+	</div>
+	<section class="author-bio row small-collapse medium-uncollapse">
+			<div class="medium-2 columns">
+				<img class="author-pic" src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2010/07/matt.jpg" alt="">
+			</div>
+			<div class="medium-10 columns">
+				<h4>About the Author</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quam commodi facilis nulla adipisci. Quidem facilis minus fugiat praesentium voluptates perferendis nesciunt sapiente, voluptas deserunt incidunt ducimus libero nemo natus.</p>
+				<a href="#" class="hollow button">view all articles</a>
+			</div>
+	</section>
+	<div class="section-divider">
+		<hr>
+	</div>		
+<?php endif; ?>
