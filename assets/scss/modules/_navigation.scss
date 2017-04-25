@@ -5,8 +5,8 @@
     left: 0;
     width: 100%;
     height: 68px;
-    background-color: $white;
-    border-bottom: 1px solid $white;
+    background-color: $header-bg;
+    border-bottom: 1px solid $header-bg;
     z-index: 1;
     transition: height 0.3s ease-out, background-color 0.3s ease-out, border-bottom-color 0.3s ease-out;
 	
@@ -18,6 +18,10 @@
 	position: relative;
 	height: 100%;
 	overflow: hidden;
+	i,svg {
+    	fill: $white;
+    	color: $white;
+    }
 }
  
 .site-header__nav,
@@ -99,13 +103,15 @@
 // OffCanvas Menu
 .off-canvas {
 	> ul.menu {		
-		height: 100vh;
-		width: 250px;
-		padding: 1rem;
+		padding: $global-padding*3 $global-padding $global-padding;
+		@include breakpoint(medium) {
+			padding: $global-padding*4 $global-padding $global-padding;
+		}
 
 		a {
+			font-family: $offcanvas-font-family;
+			font-style: $offcanvas-font-style;		
 			color: $white;
-			font-weight: 600;
 			font-size: rem-calc(18);
 			opacity: .75;
 		}

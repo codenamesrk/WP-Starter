@@ -36,19 +36,11 @@
 #front-hero {
 	@include grid-row();
 	@include grid-row-size(expand);	
-
-	@include breakpoint(small) {
-		background: url('../images/demo/hero-bg-foundation-6-small.svg') bottom center;
-		background-size: cover;
-		background-position: bottom;
-		height: auto;
-		margin-bottom: 1.5rem;
-	}
+	@include linear-gradient(to bottom, $hero-gradient-start,$hero-gradient-mid,$hero-gradient-end);
+	height: auto;
+	margin-bottom: 1.5rem;
 
 	@include breakpoint(medium) {
-		background: url('../images/demo/hero-bg-foundation-6-large.svg') bottom center;
-		background-size: cover;
-		background-position: center;
 		height: rem-calc(360);
 		margin-bottom: 5rem;	
 	}

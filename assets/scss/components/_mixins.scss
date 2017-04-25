@@ -4,3 +4,6 @@
 	height: 100%;
 	object-fit: cover;
 }
+@mixin linear-gradient($dir,$start,$mid,$end){
+	background: linear-gradient($dir, $start 0%,$mid 41%,$end 100%);
+}
