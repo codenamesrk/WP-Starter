@@ -7,3 +7,28 @@
 @mixin linear-gradient($dir,$start,$mid,$end){
 	background: linear-gradient($dir, $start 0%,$mid 41%,$end 100%);
 }
+@mixin letter-behind($letter) {
+	margin: $global-margin 0 $global-margin*2 0;
+	&:after {
+		content: $letter;
+		color: $light-gray;
+		font-size: 5rem;
+		opacity: 0.5;
+		z-index: -1;
+		@include absolute-center;
+		top: 20%;
+	}			
+	@include breakpoint(medium) {
+		margin: $global-margin*4 0;
+		&:after {
+			content: 'M';
+			color: $light-gray;
+			font-size: 10rem;
+			opacity: 0.5;
+			z-index: -1;
+			@include vertical-center;
+			top: 20%;
+			left: -50%;
+		}				
+	}
+} 

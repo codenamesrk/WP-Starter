@@ -2,12 +2,13 @@
 .section-title {
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
+	letter-spacing: -0.01em;
 	@include breakpoint(medium) {
-		font-size: 2.25rem;
+		font-size: 1.75rem;
 		margin-bottom: 1.25rem;
 	}
 	@include breakpoint(large) {
-		font-size: 2.25rem;
+		font-size: 2rem;
 		margin-bottom: 1.25rem;
 	}
 }
@@ -24,4 +25,18 @@
 }
 .category-mobile-menu {
 	@include hide-for(large);
+}
+// Section Blocks
+.section {
+	.section-title-block {
+		position: relative;
+		h2 {
+			display: inline-block;
+			position: relative;			
+		}
+	}
+}
+// Letter Behind
+.section-title-block {
+	.sec-muse { @include letter-behind('M'); }
 }

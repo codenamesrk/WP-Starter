@@ -23,7 +23,7 @@ get_header(); ?>
 		<div class="row">
         <?php
         $args = array(
-          'orderby' => 'name',
+          'orderby' => 'date',
           'parent' => 0
           );
         $categories = get_categories( $args );		

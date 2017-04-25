@@ -52,92 +52,38 @@ get_header(); ?>
 
 	<!-- /Section Intro -->
 	<section class="section musings">
-		<header class="wps section-title-block">
-			<h2>Musings</h2>
+		<header class="wps section-title-block musings">
+			<h2 class="sec-muse">Musings</h2>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit laudantium culpa delectus harum quaerat sit asperiores</p>
 		</header>
-		<div class="post-grid small-up-1 medium-up-2 large-up-3">
-			<div class="column column-block post">
-				<article>
-					<h4 class="post-date">Dec 15</h4>
-					<h4 class="post-title">Visions of our future from the past</h4>
-					<div class="post-divider"></div>
-					<ul class="post-cats no-bullet menu">
-						<li><em>Postmodernism</em></li>
-					</ul>
-					<div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores saepe perferendis, repudiandae fugiat. Sapiente, animi debitis mollitia dolorem magnam, ut consequatur itaque similique, enim illum ex odit. Quo, magnam, numquam</p>
-					</div>
-				</article>
-			</div>
-			<div class="column column-block post">
-				<article>
-					<h4 class="post-date">Dec 15</h4>
-					<h4 class="post-title">Visions of our future from the past</h4>
-					<div class="post-divider"></div>
-					<ul class="post-cats no-bullet menu">
-						<li><em>Postmodernism</em></li>
-					</ul>
-					<div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores saepe perferendis, repudiandae fugiat. Sapiente, animi debitis mollitia dolorem magnam, ut consequatur itaque similique, enim illum ex odit. Quo, magnam, numquam</p>
-					</div>
-				</article>
-			</div>
-			<div class="column column-block post">
-				<article>
-					<h4 class="post-date">Dec 15</h4>
-					<h4 class="post-title">Visions of our future from the past</h4>
-					<div class="post-divider"></div>
-					<ul class="post-cats no-bullet menu">
-						<li><em>Postmodernism</em></li>
-					</ul>
-					<div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores saepe perferendis, repudiandae fugiat. Sapiente, animi debitis mollitia dolorem magnam, ut consequatur itaque similique, enim illum ex odit. Quo, magnam, numquam</p>
-					</div>
-				</article>
-			</div>
-			<div class="column column-block post">
-				<article>
-					<h4 class="post-date">Dec 15</h4>
-					<h4 class="post-title">Visions of our future from the past</h4>
-					<div class="post-divider"></div>
-					<ul class="post-cats no-bullet menu">
-						<li><em>Postmodernism</em></li>
-					</ul>
-					<div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores saepe perferendis, repudiandae fugiat. Sapiente, animi debitis mollitia dolorem magnam, ut consequatur itaque similique, enim illum ex odit. Quo, magnam, numquam</p>
-					</div>
-				</article>
-			</div>
-			<div class="column column-block post">
-				<article>
-					<h4 class="post-date">Dec 15</h4>
-					<h4 class="post-title">Visions of our future from the past</h4>
-					<div class="post-divider"></div>
-					<ul class="post-cats no-bullet menu">
-						<li><em>Postmodernism</em></li>
-					</ul>
-					<div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores saepe perferendis, repudiandae fugiat. Sapiente, animi debitis mollitia dolorem magnam, ut consequatur itaque similique, enim illum ex odit. Quo, magnam, numquam</p>
-					</div>
-				</article>
-			</div>
-			<div class="column column-block post">
-				<article>
-					<h4 class="post-date">Dec 15</h4>
-					<h4 class="post-title">Visions of our future from the past</h4>
-					<div class="post-divider"></div>
-					<ul class="post-cats no-bullet menu">
-						<li><em>Postmodernism</em></li>
-					</ul>
-					<div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores saepe perferendis, repudiandae fugiat. Sapiente, animi debitis mollitia dolorem magnam, ut consequatur itaque similique, enim illum ex odit. Quo, magnam, numquam</p>
-					</div>
-				</article>
-			</div>
-		</div>
+
+		<?php 
+		// the query
+		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+		$args = array(		
+			'posts_per_page' => 6,
+			'orderby' => 'date',
+			'ignore_sticky_posts' => 1,
+			'paged' => $paged,
+			);
+		$wp_query = new WP_Query( $args ); ?>
+		 
+		<?php if ( $wp_query->have_posts() ) : ?>
+			<div class="post-grid small-up-1 medium-up-2 large-up-3">
+		    <?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
+		        <?php get_template_part( 'template-parts/content', 'grid' ); ?>
+		    <?php endwhile; ?>		
+		 	</div>
+		<?php else : ?>
+		    <?php get_template_part( 'template-parts/content', 'none' ); ?>
+		<?php endif; ?>	
+
+		<?php wp_reset_postdata(); ?>	
+		<?php wp_reset_query(); //resetting the page query ?>	
+		   
 		<div class="text-center">
-			<a href="#" class="hollow button">read more articles</a>
+			<a href="<?php echo site_url(); ?>/blog" class="hollow button">read more articles</a> 
+
 		</div>
 	</section>
 	<!-- /Section Intro -->
