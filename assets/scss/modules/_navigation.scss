@@ -37,17 +37,15 @@
     }
 }
 .site-header__logo {    
-    width: 104px;
+    width: 150px;
     z-index: 2;
     margin: 0;
     @include absolute-center;
     cursor: pointer;
     transition: top 0.2s ease-out, opacity 0.2s ease-out;
-    // @include breakpoint(medium) {
-    // 	top: 23px;
-    // 	width: 124px;
-   	// 	height: 34px;
-    // }
+    @include breakpoint(medium) {
+    	width: 200px;
+    }
 }
 .site-header__social {
 	right: 16px;
