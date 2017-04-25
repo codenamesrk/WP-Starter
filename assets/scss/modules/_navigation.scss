@@ -110,10 +110,9 @@
 
 		a {
 			font-family: $offcanvas-font-family;
-			font-style: $offcanvas-font-style;		
+			font-weight: $offcanvas-font-weight;		
 			color: $white;
 			font-size: rem-calc(18);
-			opacity: .75;
 		}
 
 		.is-accordion-submenu-parent > a::after {

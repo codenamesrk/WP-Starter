@@ -38,7 +38,7 @@ get_header(); ?>
 	<!-- Section Intro -->
 	<section class="section intro" role="main">
 		<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
-		<div class="wps fp-intro text-center">
+		<div class="wps fp-intro medium-text-center">
 			<h2 class="section-title">Vestibulum id liqula porta felis</h2>
 			<?php the_content(); ?>
 			<a href="#" class="hollow button">about the author</a>
