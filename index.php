@@ -22,12 +22,12 @@ get_header(); ?>
 		<?php get_template_part( 'template-parts/page','header'); ?>
 		<div class="row">
         <?php
-  //       $args = array(
-  //         'orderby' => 'date',
-  //         'parent' => 0
-  //         );
-  //       $categories = get_categories( $args );		
-		// echo display_categories($categories); ?>
+        $args = array(
+          'orderby' => 'date',
+          'parent' => 0
+          );
+        $categories = get_categories( $args );		
+		echo display_categories($categories); ?>
 		</div>
 		<?php if ( have_posts() ) : ?>
 			<div class="post-grid small-up-1 medium-up-2 large-up-3">

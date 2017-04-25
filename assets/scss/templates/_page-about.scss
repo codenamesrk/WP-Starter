@@ -25,8 +25,19 @@
 		padding-left: 2rem !important;	
 	}			
 }
-.author-info .contact-details {
-	li {
-		margin-bottom: $global-margin;
+.author-pic-wrap {
+	@include breakpoint(large) {
+		background-color: $light-gray;
+		margin-bottom: $global-margin*2;
+	}
+}
+.author-info {
+	@include breakpoint(large) {
+		padding: 0 $global-mobile-padding $global-mobile-padding;
+	}
+	.contact-details {
+		li {
+			margin-bottom: $global-margin;
+		}
 	}
 }

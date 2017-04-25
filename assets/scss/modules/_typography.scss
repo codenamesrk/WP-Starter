@@ -27,16 +27,21 @@
 	@include hide-for(large);
 }
 // Section Blocks
-.section {
-	.section-title-block {
-		position: relative;
-		h2 {
-			display: inline-block;
-			position: relative;			
-		}
+
+.section-title-block,
+.subsection-title-block {
+	position: relative;
+	h2 {
+		display: inline-block;
+		position: relative;			
 	}
 }
+
 // Letter Behind
-.section-title-block {
+.section-title-block,
+.subsection-title-block {
 	.sec-muse { @include letter-behind('M'); }
+	.sec-about { @include letter-behind('A'); }
+	.sec-edu { @include letter-behind-big('E'); }
+	.sec-exp { @include letter-behind-big('P'); }
 }

@@ -51,8 +51,8 @@ get_header(); ?>
 	</div>
 
 	<!-- /Section Intro -->
-	<section class="section musings">
-		<header class="wps section-title-block musings">
+	<section class="section">
+		<header class="wps section-title-block">
 			<h2 class="sec-muse">Musings</h2>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit laudantium culpa delectus harum quaerat sit asperiores</p>
 		</header>

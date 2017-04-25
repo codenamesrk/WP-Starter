@@ -8,8 +8,7 @@
 	background: linear-gradient($dir, $start 0%,$mid 41%,$end 100%);
 }
 @mixin letter-behind($letter) {
-	margin: $global-margin 0 $global-margin*2 0;
-	&:after {
+	&:before {
 		content: $letter;
 		color: $light-gray;
 		font-size: 5rem;
@@ -19,9 +18,8 @@
 		top: 20%;
 	}			
 	@include breakpoint(medium) {
-		margin: $global-margin*4 0;
-		&:after {
-			content: 'M';
+		&:before {
+			content: $letter;
 			color: $light-gray;
 			font-size: 10rem;
 			opacity: 0.5;
@@ -31,4 +29,27 @@
 			left: -50%;
 		}				
 	}
-} 
+}
+@mixin letter-behind-big($letter) {
+	&:before {
+		content: $letter;
+		color: $light-gray;
+		font-size: 5rem;
+		opacity: 0.5;
+		z-index: -1;
+		@include absolute-center;
+		top: 20%;
+	}			
+	@include breakpoint(medium) {
+		&:before {
+			content: $letter;
+			color: $light-gray;
+			font-size: 10rem;
+			opacity: 0.5;
+			z-index: -1;
+			@include vertical-center;
+			top: 20%;
+			left: -10%;
+		}				
+	}
+}  
