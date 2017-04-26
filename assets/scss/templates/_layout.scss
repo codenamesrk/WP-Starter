@@ -108,9 +108,9 @@
 		@include breakpoint(medium) {
 			// background: $light-gray;
 			padding: $global-mobile-padding;			
-			&:hover {
-				background: $light-gray;
-			}
+			// &:hover {
+			// 	background: $light-gray;
+			// }
 		}
 	}
 }
@@ -126,13 +126,12 @@ article {
 	}
 	.post-date {
 		text-transform: uppercase;
-		font-weight: 100;
-		color: $header-bg;
+		font-weight: 100;		
 		margin-bottom: $global-mobile-padding - 0.5;			
 	}
-	.post-title a {
-		color: $black;
-	}				
+	// .post-title a {
+	// 	color: $black;
+	// }				
 }
 
 .post-categories {

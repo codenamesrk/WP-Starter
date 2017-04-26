@@ -10,3 +10,19 @@
 		@include grid-column(12);
 	}
 }
+.post {
+	article {
+		@include breakpoint(medium) {		
+			&:hover {
+				background: $light-gray;
+			}
+		}
+	}
+}
+article .post-date,
+.subsection h5{
+	color: $header-bg;
+}
+article .post-title a {
+	color: $black;
+}

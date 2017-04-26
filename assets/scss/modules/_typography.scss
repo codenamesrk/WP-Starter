@@ -43,5 +43,7 @@
 	.sec-muse { @include letter-behind('M'); }
 	.sec-about { @include letter-behind('A'); }
 	.sec-edu { @include letter-behind-big('E'); }
-	.sec-exp { @include letter-behind-big('P'); }
+	.sec-exp, .sec-res { @include letter-behind-big('P'); }
+	.sec-res { @include letter-behind-big('R'); }
+	.sec-qlf { @include letter-behind-big('Q'); }	
 }

@@ -61,7 +61,49 @@ get_header(); ?>
 						</li>																				
 					</ul>
 				</div>
-			</article>		
+			</article>
+			<article class="subsection research">
+				<header class="subsection-title-block">
+					<h2 class="sec-res">Research Interests</h2>							
+				</header>
+				<div class="details">
+					<ul class="no-bullet">
+						<li>							
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</li>
+						<li>							
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</li>
+						<li>							
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</li>
+						<li>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</li>																				
+					</ul>
+				</div>
+			</article>
+			<article class="subsection qualifications">
+				<header class="subsection-title-block">
+					<h2 class="sec-qlf">Qualifications</h2>							
+				</header>
+				<div class="details">
+					<ul class="no-bullet">
+						<li>							
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</li>
+						<li>							
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</li>
+						<li>							
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</li>
+						<li>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</li>																				
+					</ul>
+				</div>
+			</article>									
 		</div>
 		<div class="wps right-content">
 			<article class="subsection experience">
@@ -88,7 +130,28 @@ get_header(); ?>
 						</li>																				
 					</ul>
 				</div>
-			</article>				
+			</article>
+			<article class="subsection research">
+				<header class="subsection-title-block">
+					<h2 class="sec-exp">Published Works</h2>							
+				</header>
+				<div class="details">
+					<ul class="no-bullet">
+						<li>							
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</li>
+						<li>							
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</li>
+						<li>							
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</li>
+						<li>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</li>																				
+					</ul>
+				</div>
+			</article>								
 		</div>				
 	</section>
 	
