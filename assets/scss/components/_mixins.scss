@@ -1,54 +1,53 @@
 // Misins
+// Fill Image Inside a Container
 @mixin img-cover() {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
+// BG Linear Gradient
 @mixin linear-gradient($dir,$start,$mid,$end){
 	background: linear-gradient($dir, $start 0%,$mid 41%,$end 100%);
 }
+@mixin lb-small {
+	color: $light-gray;
+	font-size: 5rem;
+	opacity: 0.5;
+	z-index: -1;
+	@include absolute-center;
+	top: 20%;
+}
+@mixin lb-medium {
+	color: $light-gray;
+	font-size: 10rem;
+	opacity: 0.5;
+	z-index: -1;
+	@include vertical-center;
+	top: 20%;
+	left: -50%;	
+}
+// Letter Behind a Text
 @mixin letter-behind($letter) {
 	&:before {
 		content: $letter;
-		color: $light-gray;
-		font-size: 5rem;
-		opacity: 0.5;
-		z-index: -1;
-		@include absolute-center;
-		top: 20%;
+		@include lb-small;
 	}			
 	@include breakpoint(medium) {
 		&:before {
 			content: $letter;
-			color: $light-gray;
-			font-size: 10rem;
-			opacity: 0.5;
-			z-index: -1;
-			@include vertical-center;
-			top: 20%;
-			left: -50%;
+			@include lb-medium;
 		}				
 	}
 }
 @mixin letter-behind-big($letter) {
 	&:before {
 		content: $letter;
-		color: $light-gray;
-		font-size: 5rem;
-		opacity: 0.5;
-		z-index: -1;
-		@include absolute-center;
-		top: 20%;
+		@include lb-small;		
 	}			
 	@include breakpoint(medium) {
 		&:before {
 			content: $letter;
-			color: $light-gray;
-			font-size: 10rem;
-			opacity: 0.5;
-			z-index: -1;
-			@include vertical-center;
-			top: 20%;
+			@include lb-medium;
 			left: -10%;
 		}				
 	}

@@ -23,3 +23,13 @@
 ul.no-bullet li {
 	display: inline-block;
 }
+.subsection ul.no-bullet li {
+	width: 100%;
+	margin-bottom: $global-margin;
+}
+.fa-ul {
+	margin-left: $global-mobile-padding;
+}
+.fa-li {	
+	top: 5px;
+}

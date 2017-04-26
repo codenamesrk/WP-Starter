@@ -67,18 +67,18 @@ get_header(); ?>
 					<h2 class="sec-res">Research Interests</h2>							
 				</header>
 				<div class="details">
-					<ul class="no-bullet">
+					<ul class="no-bullet fa-ul">
 						<li>							
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit
 						</li>
 						<li>							
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit
 						</li>
 						<li>							
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit
 						</li>
 						<li>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit
 						</li>																				
 					</ul>
 				</div>
@@ -131,23 +131,23 @@ get_header(); ?>
 					</ul>
 				</div>
 			</article>
-			<article class="subsection research">
+			<article class="subsection published-works">
 				<header class="subsection-title-block">
 					<h2 class="sec-exp">Published Works</h2>							
 				</header>
 				<div class="details">
-					<ul class="no-bullet">
+					<ul class="no-bullet fa-ul">
 						<li>							
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit
 						</li>
 						<li>							
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit
 						</li>
 						<li>							
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit
 						</li>
 						<li>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit
 						</li>																				
 					</ul>
 				</div>
