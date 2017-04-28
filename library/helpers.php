@@ -47,10 +47,18 @@ function display_categories($categories) {
 }
 function singleCategories(){
 	$categories = get_the_category(); 
-	$cats = '<ul class="menu">';
+	$count = sizeof($categories);
+	if($count > 4) {
+		$cats = '<ul class="single-category-menu dropdown menu" data-dropdown-menu><li><a href="#">All Categories</a><ul class="menu">';		
+	} else {
+		$cats = '<ul class="single-category-menu menu">';
+	}	
 	foreach ($categories as $cat) {
 		$cats .= '<li><a href="' . esc_url( get_category_link( $cat->term_id ) ) . '"><em>'. $cat->name .'</em></a></li>';
 	}
 	$cats .= '</ul>';
+	if($count > 4) {
+		$cats .= '</li></ul>';
+	}
 	return $cats;
 }

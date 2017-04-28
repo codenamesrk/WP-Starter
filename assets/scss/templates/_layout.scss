@@ -9,8 +9,8 @@
 #page,
 #single-post {
 	.wps {
-		padding-left: $global-mobile-padding;
-		padding-right: $global-mobile-padding;
+		padding-left: $global-mobile-padding !important;
+		padding-right: $global-mobile-padding !important;
 	}
 }
 #page {

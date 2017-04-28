@@ -19,12 +19,31 @@
 	font-weight: 700;
 	text-transform: uppercase;
 	li > a {
-		color: $black;
+
 	}
 	li.active > a {
 		background: $light-gray;
 		color: $header-bg;
 	}	
+}
+.category-menu,
+.single-category-menu {
+	li {
+		a {
+			color: $black;
+			&:hover {
+				background: transparentize($light-gray,0.5);
+				color: $header-bg;
+			}
+		}
+	}
+}
+.single-category-menu {
+ 	li > a {
+ 		// font-family: $header-font-family;
+ 		// font-weight: 100;
+ 		text-transform: capitalize;
+ 	}
 }
 .category-mobile-menu {
 	@include hide-for(large);

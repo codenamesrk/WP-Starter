@@ -18,7 +18,7 @@
 <nav class="off-canvas site-search position-top" id="siteSearch" data-off-canvas role="search" data-transition="overlap">
 	<div class="site-search__bar">
 		<div class="site-search__input">
-			<form action="" class="searchform">
+			<form role="search" method="get" action="<?php echo site_url(); ?>" class="searchform"> 
 				<input type="text" name="s" value="" placeholder="Start Typing Here">
 				<input type="submit" id="searchsubmit" value="Search" class="hide">
 			</form>			

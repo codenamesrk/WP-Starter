@@ -2,13 +2,14 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: rem-calc(100);
+  height: rem-calc(273);
+  margin-bottom: $global-mobile-padding;
 
   @include breakpoint(medium) {
-    height: rem-calc(200);
+    height: rem-calc(546);
   }
 
   @include breakpoint(xlarge) {
-    height: rem-calc(400);
+    height: rem-calc(728);
   }
 }
