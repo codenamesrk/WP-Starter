@@ -15,9 +15,9 @@ get_header(); ?>
 		<?php get_template_part( 'template-parts/page-header'); ?>
 		<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
 		<!-- Papers -->
-		<section class="papers">
-			<header>
-				<h3 class="wps entry-title">Papers</h3>							
+		<section class="subsection papers">
+			<header class="wps subsection-title-block">
+				<h2 class="sec-pap">Papers</h2>								
 			</header>
 			<article class="wps paper">
 				<h5>2010</h5>
@@ -37,12 +37,13 @@ get_header(); ?>
 			<hr>
 		</div>
 		<!-- /Books  -->
-		<section class="books">
-			<header>
-				<h3 class="wps entry-title">Books</h3>							
+		<section class="subsection books">
+			<header class="wps subsection-title-block">
+				<h2 class="sec-bks">Books</h2>								
 			</header>
 			<article class="wps book row collapse">
 				<div class="book-cover medium-2 columns">
+					<h5>2010</h5>
 					<img src="http://localhost:3000/cauldron/matt/wp-content/uploads/sites/2/2017/04/1.png" alt="">
 				</div>
 				<div class="book-details medium-10 columns">
@@ -52,6 +53,7 @@ get_header(); ?>
 			</article>
 			<article class="wps book row collapse">
 				<div class="book-cover medium-2 columns">
+					<h5>2010</h5>
 					<img src="http://localhost:3000/cauldron/matt/wp-content/uploads/sites/2/2017/04/1.png" alt="">
 				</div>
 				<div class="book-details medium-10 columns">
@@ -61,6 +63,7 @@ get_header(); ?>
 			</article>
 			<article class="wps book row collapse">
 				<div class="book-cover medium-2 columns">
+					<h5>2010</h5>				
 					<img src="http://localhost:3000/cauldron/matt/wp-content/uploads/sites/2/2017/04/1.png" alt="">
 				</div>
 				<div class="book-details medium-10 columns">

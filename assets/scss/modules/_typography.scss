@@ -40,10 +40,11 @@
 // Letter Behind
 .section-title-block,
 .subsection-title-block {
-	.sec-muse { @include letter-behind('M'); }
 	.sec-about { @include letter-behind('A'); }
+	.sec-bks { @include letter-behind-big('B'); }
 	.sec-edu { @include letter-behind-big('E'); }
-	.sec-exp, .sec-res { @include letter-behind-big('P'); }
-	.sec-res { @include letter-behind-big('R'); }
+	.sec-exp, .sec-res, .sec-pub, .sec-pap { @include letter-behind-big('P'); }
+	.sec-muse { @include letter-behind('M'); }
 	.sec-qlf { @include letter-behind-big('Q'); }	
+	.sec-res { @include letter-behind-big('R'); }
 }
