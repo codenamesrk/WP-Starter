@@ -18,9 +18,12 @@
 	font-size: 80%;
 	font-weight: 700;
 	text-transform: uppercase;
-	.menu .active a {
-		background: none;
-		color: red;
+	li > a {
+		color: $black;
+	}
+	li.active > a {
+		background: $light-gray;
+		color: $header-bg;
 	}	
 }
 .category-mobile-menu {
@@ -42,6 +45,7 @@
 .subsection-title-block {
 	.sec-about { @include letter-behind('A'); }
 	.sec-bks { @include letter-behind-big('B'); }
+	// .sec-blog { @include letter-behind('B'); }	
 	.sec-edu { @include letter-behind-big('E'); }
 	.sec-exp, .sec-res, .sec-pub, .sec-pap { @include letter-behind-big('P'); }
 	.sec-muse { @include letter-behind('M'); }
