@@ -13,20 +13,26 @@
 	}
 }
 // Category Menu
-.category-menu {
-	@include show-for(large);
+.category-menu,
+.category-mobile-menu,
+.single-category-menu {	
+	font-family: $header-font-family;
 	font-size: 80%;
-	font-weight: 700;
+	font-weight: 400;
 	text-transform: uppercase;
 	li > a {
-
+		text-transform: uppercase;
 	}
 	li.active > a {
 		background: $light-gray;
 		color: $header-bg;
 	}	
 }
+.category-menu {
+	@include show-for(large);
+}
 .category-menu,
+.category-mobile-menu,
 .single-category-menu {
 	li {
 		a {
@@ -39,9 +45,9 @@
 	}
 }
 .single-category-menu {
+	font-family: $body-font-family;
+	font-size: 100%;
  	li > a {
- 		// font-family: $header-font-family;
- 		// font-weight: 100;
  		text-transform: capitalize;
  	}
 }

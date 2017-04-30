@@ -131,9 +131,13 @@ article {
 	.post-title,
 	.post-cats {
 		margin-bottom: $global-mobile-padding - 0.5;
+		letter-spacing: -0.025em;
 		@include breakpoint(medium) {
 			margin-bottom: $global-mobile-padding;
 		}
+	}
+	.post-date {
+		letter-spacing: -0.025em;
 	}
 	// .post-date {
 	// 	@include red-box;

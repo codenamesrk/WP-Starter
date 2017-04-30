@@ -19,7 +19,7 @@ get_header(); ?>
 
 			<header class="text-center">
 				<h4 class="post-date"><?php echo get_the_date('M j'); ?></h4>
-				<h1 class="post-title"><?php the_title(); ?></h1>
+				<h2 class="post-title"><?php the_title(); ?></h2>
 				<?php #foundationpress_entry_meta(); ?>
 				<div class="post-divider center"></div>			
 				<div class="post-cats menu-centered">
