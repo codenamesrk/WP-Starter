@@ -56,7 +56,10 @@
 	h2,h3 {
 		display: inline-block;
 		position: relative;
-		letter-spacing: -0.04em;			
+		letter-spacing: -0.04em;
+		@include breakpoint(medium) {
+		padding-left: 1.5rem;	
+		}			
 	}
 }
 
@@ -113,9 +116,26 @@ article	.post-date {
 		font-weight: 700;
 		letter-spacing: -0.025em;
 	}
-	h6 {
+	h6, ul.tags li {
 		@include box-title(gray);
+		&.author {
+			font-size: 90%;
+			background-color: $white;
+		}
+	}
+	ul.tags {
+		margin:0 0 0.5rem 0;
+		li {
+			padding: 0.3rem 0.75rem;
+			border-left: none;			
+			margin-bottom: 0.5rem;
 
+			&:before {
+				@include fa-icon();
+				content: $fa-var-bookmark;
+				margin-right: $global-margin/2;
+			}
+		}
 	}	
 }
 .subs-list {

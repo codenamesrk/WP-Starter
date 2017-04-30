@@ -14,14 +14,22 @@
 .book-cover {
 	@include breakpoint(small only) {
 		width: 120px;
-	}
-	img {
-		@include breakpoint(small only) {
-			margin-bottom: $global-margin/2;
-		}
+		margin-bottom: $global-margin/2;
 	}
 	h5 {
 		@include show-for-only(small);
+	}
+	.book-cover-inner {
+		position: relative;
+	}
+	.buy-book-badge {
+		position: absolute;
+		bottom: 0;
+		left: 0;		
+		@include badge(red);
+		@include breakpoint(small only) {
+			width: 100%;
+		}
 	}
 }
 .book-details {	

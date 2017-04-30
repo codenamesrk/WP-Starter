@@ -184,20 +184,40 @@ get_header(); ?>
 				<div class="details">
 					<ul class="subs-list no-bullet fa-ul">
 						<li>							
-							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>
+							<a href="#">“Spatialising the Contemporary Urban Order” in Indian Journal of Politics and International Relations (Vol.5-7,June 2014), ISSN 0973- 5011</a>
 						</li>
 						<li>							
-							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>
+							<a href="#">“Earthing with Expectations” in Elenchus Law Review (1 [1]) January 2015, Peer Reviewed Journal of the Government Law College, Thrissur. ISSN 2395-034X. </a>
 						</li>
 						<li>							
-							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>
+							<a href="#">“New Religious Affirmations: Performances and Public Spaces in Urban Central Kerala” in Ruhuna University Journal of   Social Sciences (RUJSS), Published by the University of Ruhuna, Matara, Sri Lanka. Vol. V (No.2) 73-83, 2014, ISSN: 1800-3486. </a>
 						</li>
 						<li>
-							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>
+							<a href="#">“Spatial Reconfigurations and New Social Formations: The Contemporary   Urban Context of Kerala” (ISBN: 978-82-308-2285-2), Published by   University of Bergen, Norway </a>
 						</li>																				
 					</ul>
 				</div>
-			</article>								
+			</article>
+			<div class="subsection-divider">
+				<hr class="show-for-small-only">
+			</div>
+			<article class="subsection published-works">
+				<header class="subsection-title-block">
+					<h3 class="sec-exp">Upcoming Work</h3>							
+				</header>
+				<div class="details">
+					<ul class="subs-list no-bullet fa-ul">
+						<li>							
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>
+							<a href="#">Tereza Kuldova & Mathew Akkanad Varghese (ed.), Urban Utopias: Excess and Expulsion in Neoliberal South Asia.  Palgrave Macmillan.  ISBN 978-3-319-47622-3. (2017)</a>
+						</li>																								
+					</ul>
+				</div>
+			</article>															
 		</div>				
 	</section>
 	

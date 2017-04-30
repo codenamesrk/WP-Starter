@@ -80,3 +80,17 @@
 	}
 	
 }
+@mixin badge($color) {
+	padding: $global-padding/2;
+	color: $white;
+	background-color: $color;
+	font-family: $header-font-family;
+	font-weight: 400;
+	font-size: 70%;
+	text-transform: uppercase;	
+	&:after {
+		@include fa-icon();
+		content: $fa-var-caret-right;
+		margin-left: $global-margin/4;
+	}
+}
