@@ -2,3 +2,15 @@
   border-style: dashed;
   margin: 2rem 0;
 }
+.subsection-divider {
+	@include breakpoint(small only) {
+		@include show-for-only(small);
+		@include grid-row();
+		hr {
+			border-style: dashed;
+			margin: 2rem 0;
+			box-sizing: border-box;
+			width: 100%;			
+		}
+	}
+}

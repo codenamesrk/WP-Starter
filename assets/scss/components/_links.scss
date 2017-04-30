@@ -33,3 +33,7 @@ ul.no-bullet li {
 .fa-li {	
 	top: 5px;
 }
+// CAllout
+.thick-border__left {
+	border-left: 4px solid transparentize($header-bg,0.1);
+}

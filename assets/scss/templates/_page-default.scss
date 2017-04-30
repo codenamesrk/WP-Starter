@@ -1,6 +1,6 @@
 #page {
 	@include grid-row();
-	margin-top: 1rem;
+	padding-top: $global-margin*2;
 
 	.main-content {
 		display: block;		
@@ -12,18 +12,20 @@
 }
 .post {
 	article {
-		@include breakpoint(medium) {		
+		@include breakpoint(medium) {
+			background: $light-gray;		
 			&:hover {
-				background: $light-gray;
+				background: transparentize($light-gray,0.5);
 			}
 		}
 	}
 }
-article .post-date,
-.subsection h5,
+// article .post-date,
+// .subsection h5,
 .subsection .fa-li{
 	color: $header-bg;
 }
 article .post-title a {
 	color: $black;
+	letter-spacing: -.025em;
 }

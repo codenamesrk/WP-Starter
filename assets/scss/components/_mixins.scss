@@ -19,7 +19,7 @@
 }
 @mixin lb-medium {
 	color: $light-gray;
-	font-size: 10rem;
+	font-size: 8rem;
 	opacity: 0.5;
 	z-index: -1;
 	@include vertical-center;
@@ -51,4 +51,32 @@
 			left: -10%;
 		}				
 	}
-}  
+} 
+// Red Box
+@mixin box-title($color) {
+	display: inline-block;	
+	margin-bottom: $global-mobile-padding - 0.5;
+	text-transform: uppercase;	
+
+	@if($color == red) {
+		padding: $global-padding/2 $global-padding + 0.3;
+		color: $white;
+		background-color: #bb6363;
+		font-weight: 400;		
+	} 
+	@elseif($color == gray) {
+		padding: $global-padding/2 $global-padding $global-padding/2 $global-padding;
+		color: $black;
+		background-color: #e2e2e2;
+		border-left: 4px solid #421313;
+		text-transform: capitalize;
+		font-size: 80%;
+	}
+	@else {
+		color: #bb6363;
+		background-color: $white;
+		margin-bottom: $global-margin - 0.5;
+		font-size: 80%;
+	}
+	
+}

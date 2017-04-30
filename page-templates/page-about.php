@@ -39,104 +39,150 @@ get_header(); ?>
 		<div class="wps left-content">
 			<article class="subsection education">
 				<header class="subsection-title-block">
-					<h2 class="sec-edu">Education</h2>							
+					<h3 class="sec-edu">Education</h3>							
 				</header>
 				<div class="details">
-					<ul class="no-bullet">
+					<ul class="academics-list subs-list no-bullet">
 						<li>
-							<h5>2001</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							<h5 class="year">May 2007 – May 2013 </h5>
+							<h4>PhD, Faculty of Social Sciences</h4>
+							<h6 class="alma-mater">University Of Bergen</h6>
+							<p>[Thesis titled “Spatial Reconfigurations and New Social Formations: The Contemporary Urban Context of Kerala”/ Urban Processes/ Social Science of Development]</p>
 						</li>
 						<li>
-							<h5>2001</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							<h5 class="year">May 2007 – May 2013 </h5>
+							<h4>PhD, Faculty of Social Sciences</h4>
+							<h6 class="alma-mater">University Of Bergen</h6>
+							<p>[Thesis titled “Spatial Reconfigurations and New Social Formations: The Contemporary Urban Context of Kerala”/ Urban Processes/ Social Science of Development]</p>
 						</li>
 						<li>
-							<h5>2001</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							<h5 class="year">May 2007 – May 2013 </h5>
+							<h4>PhD, Faculty of Social Sciences</h4>
+							<h6 class="alma-mater">University Of Bergen</h6>
+							<p>[Thesis titled “Spatial Reconfigurations and New Social Formations: The Contemporary Urban Context of Kerala”/ Urban Processes/ Social Science of Development]</p>
 						</li>
 						<li>
-							<h5>2001</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-						</li>																				
+							<h5 class="year">May 2007 – May 2013 </h5>
+							<h4>PhD, Faculty of Social Sciences</h4>
+							<h6 class="alma-mater">University Of Bergen</h6>
+							<p>[Thesis titled “Spatial Reconfigurations and New Social Formations: The Contemporary Urban Context of Kerala”/ Urban Processes/ Social Science of Development]</p>
+						</li>						
 					</ul>
 				</div>
 			</article>
+			<div class="subsection-divider">
+				<hr class="show-for-small-only">
+			</div>			
 			<article class="subsection research">
 				<header class="subsection-title-block">
-					<h2 class="sec-res">Research Interests</h2>							
+					<h3 class="sec-res">Research Interests</h3>							
 				</header>
 				<div class="details">
-					<ul class="no-bullet fa-ul">
+					<ul class="subs-list no-bullet fa-ul">			
 						<li>							
-							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Development as an Idea (particularly in the sub-continent)
 						</li>
 						<li>							
-							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Spatial Geography and Spatiality
 						</li>
 						<li>							
-							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Unintentional Designs in the Anthropocene
 						</li>
 						<li>
-							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Co-Species Evolution
+						</li>
+						<li>							
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Subjectivities in the Making: Forms of Labour and Gender
+						</li>
+						<li>							
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Emerging Human Ecologies
+						</li>
+						<li>
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Disciplinary and Interdisciplinary Challenges in Social Sciences
+						</li>																										
+					</ul>
+				</div>
+			</article>
+			<div class="subsection-divider">
+				<hr class="show-for-small-only">
+			</div>			
+			<article class="subsection qualifications">
+				<header class="subsection-title-block">
+					<h3 class="sec-qlf">Qualifications</h3>							
+				</header>
+				<div class="details">
+					<ul class="subs-list no-bullet fa-ul">
+						<li>							
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Development as an Idea (particularly in the sub-continent)
+						</li>
+						<li>							
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Spatial Geography and Spatiality
+						</li>
+						<li>							
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Unintentional Designs in the Anthropocene
+						</li>
+						<li>
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Co-Species Evolution
+						</li>
+						<li>							
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Subjectivities in the Making: Forms of Labour and Gender
+						</li>
+						<li>							
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Emerging Human Ecologies
+						</li>
+						<li>
+							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Disciplinary and Interdisciplinary Challenges in Social Sciences
 						</li>																				
 					</ul>
 				</div>
 			</article>
-			<article class="subsection qualifications">
-				<header class="subsection-title-block">
-					<h2 class="sec-qlf">Qualifications</h2>							
-				</header>
-				<div class="details">
-					<ul class="no-bullet">
-						<li>							
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-						</li>
-						<li>							
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-						</li>
-						<li>							
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-						</li>
-						<li>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-						</li>																				
-					</ul>
-				</div>
-			</article>									
+			<div class="subsection-divider">
+				<hr class="show-for-small-only">
+			</div>												
 		</div>
 		<div class="wps right-content">
 			<article class="subsection experience">
 				<header class="subsection-title-block">
-					<h2 class="sec-exp">Professional Experience</h2>							
+					<h3 class="sec-exp">Professional Experience</h3>							
 				</header>
 				<div class="details">
-					<ul class="no-bullet">
+					<ul class="subs-list no-bullet">
 						<li>
-							<h5>2001</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-						</li>
-						<li>
-							<h5>2001</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-						</li>
-						<li>
-							<h5>2001</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-						</li>
-						<li>
-							<h5>2001</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							<h5 class="position">Assitant Professor <span class="time-period">2014 - present</span></h5>
+							<h4>Dept. of Political Science, Maharajas College, Ernakulam</h4>
+							<h6>Mahatma Gandhi University</h6>
+							<p> Under Graduate and Post Graduate Teaching/Mentoring [Human Rights both in the global and Indian context/  Social Science and its Methods/ State systems/ International Relations/ Political Thought/theories]</p>
 						</li>																				
+						<li>
+							<h5 class="position">Assitant Professor <span class="time-period">2014 - present</span></h5>
+							<h4>Dept. of Political Science, Maharajas College, Ernakulam</h4>
+							<h6>Mahatma Gandhi University</h6>
+							<p> Under Graduate and Post Graduate Teaching/Mentoring [Human Rights both in the global and Indian context/  Social Science and its Methods/ State systems/ International Relations/ Political Thought/theories]</p>
+						</li>
+						<li>
+							<h5 class="position">Assitant Professor <span class="time-period">2014 - present</span></h5>
+							<h4>Dept. of Political Science, Maharajas College, Ernakulam</h4>
+							<h6>Mahatma Gandhi University</h6>
+							<p> Under Graduate and Post Graduate Teaching/Mentoring [Human Rights both in the global and Indian context/  Social Science and its Methods/ State systems/ International Relations/ Political Thought/theories]</p>
+						</li>
+						<li>
+							<h5 class="position">Assitant Professor <span class="time-period">2014 - present</span></h5>
+							<h4>Dept. of Political Science, Maharajas College, Ernakulam</h4>
+							<h6>Mahatma Gandhi University</h6>
+							<p> Under Graduate and Post Graduate Teaching/Mentoring [Human Rights both in the global and Indian context/  Social Science and its Methods/ State systems/ International Relations/ Political Thought/theories]</p>
+						</li>																		
 					</ul>
 				</div>
 			</article>
+			<div class="subsection-divider">
+				<hr class="show-for-small-only">
+			</div>				
 			<article class="subsection published-works">
 				<header class="subsection-title-block">
-					<h2 class="sec-exp">Published Works</h2>							
+					<h3 class="sec-exp">Published Works</h3>							
 				</header>
 				<div class="details">
-					<ul class="no-bullet fa-ul">
+					<ul class="subs-list no-bullet fa-ul">
 						<li>							
 							<i class="fa-li fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit
 						</li>

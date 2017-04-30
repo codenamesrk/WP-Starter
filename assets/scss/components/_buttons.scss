@@ -16,7 +16,7 @@
 	} 
 }
 .button.hollow {
-	border: 1px solid $outer-space;
+	border: 1px solid $button-hollow-border;
 	color: $hero-gradient-start;
 	&:before {
 		@include fa-icon();

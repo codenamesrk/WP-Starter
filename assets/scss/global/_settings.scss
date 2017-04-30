@@ -65,7 +65,7 @@ $outer-space: #2c3840;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: "Noto Serif", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-$header-font-family: "Playfair Display", serif;
+$header-font-family: "Montserrat","Playfair Display", serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -83,6 +83,7 @@ $hero-gradient-start: $header-bg;
 $hero-gradient-mid: #7c2827;
 $hero-gradient-end: #511a1a;
 $offcanvas-bg: transparentize(#210e0e, 0.1);
+$button-hollow-border: #adadad;
 // 2. Breakpoints
 // --------------
 
@@ -111,7 +112,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-weight: 700;
+$header-font-weight: 400;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
@@ -246,7 +247,7 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1em;
+$button-padding: 1em 1.5em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
@@ -280,7 +281,7 @@ $buttongroup-radius-on-each: true;
 
 $callout-background: $white;
 $callout-background-fade: 85%;
-$callout-border: 1px solid rgba($black, 0.25);
+$callout-border: 1px dashed rgba($black, 0.25);
 $callout-margin: 0 0 1rem 0;
 $callout-padding: 1rem;
 $callout-font-color: $body-font-color;

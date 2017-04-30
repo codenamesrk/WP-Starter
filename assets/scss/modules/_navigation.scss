@@ -32,13 +32,16 @@
 .site-header__nav {
     left: 16px;
     width: 45px;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     z-index: 3;
     transition: top 0.3s ease-out;
     text-transform: uppercase;
     @include breakpoint(medium) {
     	left: 3%;
     }
+	.menu-icon  {
+		height: 18px;
+	}
 }
 .site-header__logo {    
     width: 150px;
@@ -61,10 +64,13 @@
 // Social Icon Menu
 .meta-nav {
 	li > a {
-		padding: 0 0 0 1rem;
+		padding: 0 0 0 2rem;
 		svg {
 			width: 20px;
-    		height: 16px;
+    		height: 18px;
+		}
+		i {
+			font-size: 1.1rem;
 		}
 	}
 }

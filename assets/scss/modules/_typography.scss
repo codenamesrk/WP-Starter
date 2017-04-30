@@ -53,9 +53,10 @@
 .section-title-block,
 .subsection-title-block {
 	position: relative;
-	h2 {
+	h2,h3 {
 		display: inline-block;
-		position: relative;			
+		position: relative;
+		letter-spacing: -0.04em;			
 	}
 }
 
@@ -65,9 +66,75 @@
 	.sec-about { @include letter-behind('A'); }
 	.sec-bks { @include letter-behind-big('B'); }
 	// .sec-blog { @include letter-behind('B'); }	
-	.sec-edu { @include letter-behind-big('E'); }
+	.sec-edu { 
+		@include letter-behind-big('E'); 
+		@include breakpoint(medium) {
+			&:before {left: -20%;} 
+		}
+	}
 	.sec-exp, .sec-res, .sec-pub, .sec-pap { @include letter-behind-big('P'); }
 	.sec-muse { @include letter-behind('M'); }
 	.sec-qlf { @include letter-behind-big('Q'); }	
 	.sec-res { @include letter-behind-big('R'); }
+}
+
+// Article Post Date 
+
+article	.post-date {
+	@include box-title(red);
+	text-transform: uppercase;
+	font-size: 70%;		
+}
+.subsection {
+	h5 {
+		@include box-title(white);
+		&.year {
+			text-transform: capitalize;
+		}
+		&.position, &.title {
+			&:before {
+				@include fa-icon();
+				content: $fa-var-caret-right;
+				margin-right: $global-margin/2;
+			}
+		}
+		.time-period {
+			margin-left: 1.5rem;
+		    color: $black;
+		    text-transform: capitalize;
+		    font-weight: 100;			
+		}		
+	}
+	h4 {
+		@include breakpoint(medium) {
+			font-size: 1.25rem;
+		}
+		font-family: $body-font-family;
+		font-weight: 700;
+		letter-spacing: -0.025em;
+	}
+	h6 {
+		@include box-title(gray);
+
+	}	
+}
+.subs-list {
+	@include breakpoint(small only) {
+		margin-bottom: 0;		
+	}
+	&:last-of-type {
+		@include breakpoint(small only) {
+			margin-bottom: 0;
+			p {	margin-bottom: 0; }
+		}
+	}	
+}
+.academics-list {
+	li {
+		.alma-mater { color: $white; }
+		&:first-of-type .alma-mater { background: #484848; }
+		&:nth-of-type(2) .alma-mater { background: lighten(#484848,10%); }
+		&:nth-of-type(3) .alma-mater { background: lighten(#484848,20%); }
+		&:last-of-type .alma-mater { background: lighten(#484848,30%);	}
+	}
 }
