@@ -15,11 +15,11 @@
   </button>	
 </nav>
 
-<nav class="off-canvas site-search position-top" id="siteSearch" data-off-canvas role="search" data-transition="overlap">
+<nav class="off-canvas site-search position-top" id="siteSearch" data-off-canvas role="search" data-transition="overlap" data-trap-focus="true">
 	<div class="site-search__bar">
 		<div class="site-search__input">
 			<form role="search" method="get" action="<?php echo site_url(); ?>" class="searchform"> 
-				<input type="text" name="s" value="" placeholder="Start Typing Here">
+				<input type="text" id="search-term" name="s" value="" placeholder="Type and Hit Enter to Search">
 				<input type="submit" id="searchsubmit" value="Search" class="hide">
 			</form>			
 		</div>

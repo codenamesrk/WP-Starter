@@ -8,3 +8,8 @@
 		margin-bottom: $global-margin;
 	}
 }
+.author .author-bio {
+	@include breakpoint(medium) {
+		padding: $global-padding 0;
+	}
+}

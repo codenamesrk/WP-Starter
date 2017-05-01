@@ -8,24 +8,25 @@ get_header(); ?>
 	<div class="featured-slider-wrapper">
 		<div class="featured-slider medium-up-3 large-up-4">
 			<div class="column column-block">
-				<div>
-					<img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/3.png" alt="">
+				<div class="featured-item-wrap">
+					<a href="#"><img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/3.png" alt=""></a>
+					<div class="overlay"></div>
 				</div>
 			</div>
 			<div class="column column-block">
-				<div><img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/2.jpg" alt=""></div>
+				<div class="featured-item-wrap"><img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/2.jpg" alt=""></div>
 			</div>
 			<div class="column column-block">
-				<div><img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/4.jpg" alt=""></div>
+				<div class="featured-item-wrap"><img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/4.jpg" alt=""></div>
 			</div>
 			<div class="column column-block">
-				<div><img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/1.png" alt=""></div>
+				<div class="featured-item-wrap"><img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/1.png" alt=""></div>
 			</div>
 			<div class="column column-block">
-				<div><img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/2.jpg" alt=""></div>
+				<div class="featured-item-wrap"><img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/2.jpg" alt=""></div>
 			</div>
 			<div class="column column-block">
-				<div><img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/3.png" alt=""></div>
+				<div class="featured-item-wrap"><img src="http://localhost/cauldron/matt/wp-content/uploads/sites/2/2017/04/3.png" alt=""></div>
 			</div>			
 		</div>		
 	</div>

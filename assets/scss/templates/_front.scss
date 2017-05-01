@@ -16,7 +16,7 @@
 	}
 	.column {		
 		text-align: center;		
-		div {
+		.featured-item-wrap {
 			display: inline-block;
 			margin: 0.5rem;
 			max-height: 300px;	
@@ -26,11 +26,21 @@
 	.column-block {
 		margin-bottom: 0;
 	}
-	.slick-slide img {
-		@include breakpoint(medium) {
-			@include img-cover();
+	.slick-slide {
+		outline: none;
+		img {
+			@include breakpoint(medium) {
+				@include img-cover();
+			}
+			height: 300px !important;
+			transition: transform 0.35s;
+			&:hover {
+				transform: scale(0.95);
+			}					
 		}
-		height: 300px !important;					
+		a {
+			display: block;
+		}
 	}
 }
 #front-hero {

@@ -63,9 +63,9 @@
 		display: inline-block;
 		position: relative;
 		letter-spacing: -0.04em;
-		@include breakpoint(medium) {
-		padding-left: 1.5rem;	
-		}			
+		// @include breakpoint(medium) {
+		// 	padding-left: 1.5rem;	
+		// }			
 	}
 }
 
@@ -163,4 +163,8 @@ article	.post-date {
 		&:nth-of-type(3) .alma-mater { background: lighten(#484848,20%); }
 		&:last-of-type .alma-mater { background: lighten(#484848,30%);	}
 	}
+}
+label {
+	text-transform: uppercase;
+	font-family: $header-font-family;
 }

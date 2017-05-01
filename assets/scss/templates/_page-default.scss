@@ -6,9 +6,20 @@
 		display: block;		
 		// @include grid-column(12);		
 	}
+	.main-content__sidebar {
+		@include grid-column(12);
+		@include breakpoint(medium) {
+			@include grid-column(8);
+		}
+	}
 	.section-header {
 		@include grid-column(12);
 	}
+}
+#page.full-width {
+	@include grid-row();
+	@include grid-row-size(expand);
+	padding-top: 0;
 }
 .post {
 	article {

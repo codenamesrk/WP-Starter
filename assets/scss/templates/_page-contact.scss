@@ -7,8 +7,12 @@
 .pirate_forms {
 	.form-control {
 		margin-bottom: 0;
+		border: 1px solid rgba(51, 51, 51, 0.14);
+	    font-size: 95%;
+	    padding: $global-mobile-padding $global-mobile-padding - 0.25;		
 	}
 	.button {
+		font-family: $body-font-family;
 		margin-top: 0;
 		text-align: left;
 	}

@@ -109,16 +109,17 @@
 // OffCanvas Menu
 .off-canvas {
 	> ul.menu {		
-		padding: $global-padding*3 $global-padding $global-padding;
-		@include breakpoint(medium) {
-			padding: $global-padding*4 $global-padding $global-padding;
-		}
+		padding: $global-padding*4 $global-padding $global-padding;
+		// @include breakpoint(medium) {
+		// 	padding: $global-padding*4 $global-padding $global-padding;
+		// }
 
 		a {
-			font-family: $offcanvas-font-family;
-			font-weight: $offcanvas-font-weight;		
+			// font-family: $offcanvas-font-family;
+			// font-weight: $offcanvas-font-weight;		
 			color: $white;
 			font-size: rem-calc(18);
+			outline: none !important;
 		}
 
 		.is-accordion-submenu-parent > a::after {
@@ -135,19 +136,24 @@
 			margin-top: -3px;
 			right: 1rem;
 		}
+		li.current_page_item a {
+			background: transparentize($white,0.75);
+		}
 	}
 
-	.menu .active > a { background-color: lighten($outer-space, 10%); }
+	// .menu .active > a { background-color: lighten($outer-space, 10%); }
 
 }
 // Site Search Offcanvas
 .site-search {
 	padding: $global-padding;
+	@include breakpoint(medium) {
+		padding: $global-padding*2;
+	}
 	background-color: $white;
 	.site-search__input {
 		@include vertical-center;
-	    width: 50%;
-	    padding-right: 30px;
+	    width: 90%;
 	    input {
 	    	box-shadow: none;
 	    	border: none;
@@ -156,13 +162,13 @@
 	}
 	.site-search__close {
 		.close-button {
-			@include vertical-center;
+			// @include vertical-center;
 		}
 	}
 }
 // OffCanvas Menu Positions
 .position-top {
-	height: 120px;
+	height: 50vh;
 }
 .title-bar-title {
 	a {

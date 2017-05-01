@@ -69,7 +69,7 @@ if ( comments_open() ) :
 	if ( (is_page() || is_single()) && ( ! is_home() && ! is_front_page()) ) :
 ?>
 <section id="respond">
-	<h3>
+	<h5 class="comment-title">
 		<?php
 			comment_form_title(
 				__( 'Leave a Reply', 'foundationpress' ),
@@ -77,9 +77,9 @@ if ( comments_open() ) :
 				__( 'Leave a Reply to %s', 'foundationpress' )
 			);
 		?>
-	</h3>
-	<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
-	<p class="cancel-comment-reply"><?php cancel_comment_reply_link(); ?></p>
+		<?php cancel_comment_reply_link('<i class="fa fa-times" aria-hidden="true"></i> Cancel Reply'); ?>
+	</h5>
+	<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>	
 	<?php if ( get_option( 'comment_registration' ) && ! is_user_logged_in() ) : ?>
 	<p>
 		<?php

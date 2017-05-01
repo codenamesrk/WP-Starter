@@ -64,11 +64,52 @@
 		@include grid-col-pos(center);
 		margin: $global-margin*4 auto;
 	}	
-	p {
-		margin: $global-margin*2 0 0;
+	p:not(.author-desc) {
+		margin: $global-margin 0 0;
 		@include breakpoint(medium) {
-			margin: $global-margin*4 0 0;
+			margin: $global-margin*2 0 0;
 		}
+	}
+	p.author-desc {
+		margin: $global-margin 0 0 0;
+	}	
+}
+.search-results .section-title-block,
+.search-no-results .section-title-block,
+.author .section-title-block,
+.category .section-title-block,
+.tag .section-title-block {
+	width: 100%;
+	margin: 0 0 $global-margin - 0.25 0;
+	padding: $global-padding 0;
+	background: gainsboro;
+	float: none;
+	@include breakpoint(medium) {
+		margin: 0 0 $global-margin 0;
+	}
+	@include breakpoint(large) {
+		padding: $global-mobile-padding 0;
+	}	
+	.search-result {
+		text-transform: uppercase;
+		font-size: 50%;
+		opacity: 0.7;
+		margin-right: $global-margin/2;
+		letter-spacing: 0;
+		@include breakpoint(medium) {
+			font-size: 40%;
+		}
+	}
+	h2 {
+		margin-bottom: 0;		
+		@include breakpoint(medium) {
+			max-width: 75%;
+			padding-left: 0;
+			font-weight: 100;			
+		}
+	}
+	h2.cat-name {
+		text-transform: uppercase;
 	}
 }
 .subsection-title-block {
@@ -154,4 +195,7 @@ article {
 
 .post-categories {
 	@include menu-base;
+}
+.search-wrap {
+	padding-top: $global-padding;
 }

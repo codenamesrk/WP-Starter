@@ -58,6 +58,9 @@ get_header(); ?>
 			</footer>
 
 			<?php the_post_navigation(); ?>
+			<div class="section-divider">
+				<hr>
+			</div>
 			<?php do_action( 'foundationpress_post_before_comments' ); ?>
 			<?php comments_template(); ?>
 			<?php do_action( 'foundationpress_post_after_comments' ); ?>

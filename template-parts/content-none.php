@@ -9,9 +9,9 @@
  */
 
 ?>
-
+<div class="medium-6 medium-centered columns">
 <header class="page-header">
-	<h1 class="page-title"><?php _e( 'Nothing Found', 'foundationpress' ); ?></h1>
+	<h1 class="page-title"><?php _e( 'We\'re Sorry.', 'foundationpress' ); ?></h1>
 </header>
 
 <div class="page-content">
@@ -29,7 +29,7 @@
 
 	<?php elseif ( is_search() ) : ?>
 
-	<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'foundationpress' ); ?></p>
+	<p><?php _e( 'We cannot find any matches for your search term. Please try again with different keywords.', 'foundationpress' ); ?></p>
 	<?php get_search_form(); ?>
 
 	<?php else : ?>
@@ -38,4 +38,5 @@
 	<?php get_search_form(); ?>
 
 	<?php endif; ?>
+</div>
 </div>
