@@ -9,7 +9,8 @@
 		margin-bottom: 0;
 		border: 1px solid rgba(51, 51, 51, 0.14);
 	    font-size: 95%;
-	    padding: $global-mobile-padding $global-mobile-padding - 0.25;		
+	    padding: $global-padding - 0.25 $global-mobile-padding - 0.25;
+	    height: auto;
 	}
 	.button {
 		font-family: $body-font-family;

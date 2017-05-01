@@ -27,11 +27,13 @@
 		.bottom-logo {			
 			font-family: $header-font-family;
 			font-size: 90%;
-			p {
-				margin-bottom: 0;
-				@include breakpoint(medium) {
-					padding: 0.7rem 0;
-				}
+			.text-widget {
+				padding: 0.5rem 0 0 0;
+			}
+			.svg-wrap {
+				width: 150px;
+			    display: inline-block;
+			    vertical-align: text-top;
 			}
 			@include breakpoint(medium) {
 				@include grid-col-size(5);

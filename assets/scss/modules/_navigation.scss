@@ -47,6 +47,7 @@
     width: 150px;
     z-index: 2;
     margin: 0;
+    line-height: 0;
     @include absolute-center;
     cursor: pointer;
     transition: top 0.2s ease-out, opacity 0.2s ease-out;
