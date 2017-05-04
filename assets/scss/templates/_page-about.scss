@@ -27,13 +27,14 @@
 }
 .author-pic-wrap {
 	@include breakpoint(large) {
-		background-color: $light-gray;
+		// background-color: $light-gray;
 		margin-bottom: $global-margin*2;
 	}
 }
 .author-info {
 	@include breakpoint(large) {
 		padding: 0 $global-mobile-padding $global-mobile-padding;
+		border-left: 4px solid rgba(146, 47, 46, 0.9);
 	}
 	.contact-details {
 		li {

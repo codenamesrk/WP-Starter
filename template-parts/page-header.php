@@ -10,6 +10,8 @@
 	<h2 class="sec-about"><?php wp_title(''); ?></h2>
 	<?php elseif(is_page('publications')) : ?>
 	<h2 class="sec-pub"><?php wp_title(''); ?></h2>
+	<?php elseif(is_page('contact')) : ?>
+	<h2 class="sec-con"><?php wp_title(''); ?></h2>	
 	<?php elseif(is_home()) : ?>
 	<h2 class="sec-muse"><?php wp_title(''); ?></h2>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi soluta dolorem ipsam voluptate cupiditate porro similique quas vero eos quo ducimus neque accusamus perspiciatis blanditiis, aperiam possimus aliquid quod inventore.</p>		

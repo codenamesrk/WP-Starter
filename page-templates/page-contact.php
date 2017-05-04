@@ -17,33 +17,31 @@ get_header(); ?>
 		<div class="wps lf left-content">
 			<!-- <img class="author-pic" data-interchange="[<?php #echo the_post_thumbnail_url('thumbnail'); ?>, small], [<?php #echo the_post_thumbnail_url('medium'); ?>, medium], [<?php #echo the_post_thumbnail_url('large'); ?>, large]" alt="">							 -->
 			<div class="callout thick-border__left">
-				<h5>University of Oslo</h5>
-				<address>
-					Faculty of Humanities
-					Department of Archaeology, Conservation and History 				
+				<h6>Maharajas College</h6>
+				<address>					
+					Department of Political Science at Maharajas College
 				</address>
 			</div>				
 			<div class="callout thick-border__left">
-				<h5>Visiting address: </h5>
+				<h6>Visiting address: </h6>
 				<address>
-					Niels Henrik Abels vei 36
-					0851 Oslo
-					office: 503
+					4088 Overlook Drive
+					Indianapolis
+					Indiana, United States
 				</address>
 			</div>
 			<div class="callout thick-border__left">
-				<h5>Postal address:</h5>
+				<h6>Postal address:</h6>
 				<address>
-					P.O.Box 1008 Blindern
-					0315 Oslo
-					<p>tereza.kuldova@iakh.uio.no</p>
-					Ph: +47 462 437 93 
+					<p>P.O.Box 1008, 15 Cunnery Rd
+					Manchester</p>					
+					Ph: +91-944-621-7402
 				</address>
 			</div>
 			<div class="callout thick-border__left">
-				<h5>Enquiries:</h5>
+				<h6>Enquiries:</h6>
 				<p>All press enquiries should be sent to:
-					tereza.kuldova@iakh.uio.no</p>
+					Mathew.Varghese@uib.no</p>
 			</div>
 		</div>
 		<div class="wps rf right-content ">

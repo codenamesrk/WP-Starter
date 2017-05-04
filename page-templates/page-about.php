@@ -205,9 +205,9 @@ get_header(); ?>
 			<div class="subsection-divider">
 				<hr class="show-for-small-only">
 			</div>
-			<article class="subsection published-works">
+			<article class="subsection upcoming-works">
 				<header class="subsection-title-block">
-					<h3 class="sec-exp">Upcoming Work</h3>							
+					<h3 class="sec-upc">Upcoming Work</h3>							
 				</header>
 				<div class="details">
 					<ul class="subs-list no-bullet fa-ul">
